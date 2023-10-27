@@ -1,0 +1,44 @@
+#footer{
+    height:fit-content;
+    width: 100%;
+    background-color: white;
+    padding: 70px;
+    color: black;
+    font-size: 10px;
+    font-family: Inter_font;
+}
+#footer a{
+    color: black;
+}
+#footer a:hover{
+    color: rgb(71, 71, 71);
+}
+#footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    padding: 70px;
+}
+#footer .content div{
+    display: flex;
+    flex-direction: column;
+}
+#footer .compDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    width: 125px;
+    margin-bottom: 30px;
+}
+#footer .compName{
+    font-size: 15px;
+}
+#footer span {
+    margin-bottom: 10px;
+}
+@font-face {
+    font-family: Inter_font;
+    src: url(../../../../font/Inter-Regular.ttf);
+  }
