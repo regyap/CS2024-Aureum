@@ -1,0 +1,41 @@
+#container {
+  border: 2px solid #000000;
+  /* background-color: bisque; */
+  text-align: center;
+  /* min-width: 500px; */
+  height: auto;
+}
+
+.product_image {
+  width: 100%;
+  height: auto;
+}
+
+#collection_name {
+  color: lightgray;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+#product_name {
+  color: black;
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+#product_description {
+  font-size: large;
+}
+
+#product_volume {
+  font-size: large;
+}
+
+#view_button {
+  border-radius: 0px;
+  background-color: white;
+  border: 1px solid #000000;
+  color: black;
+  width: 100%;
+  font-size: x-large;
+}
