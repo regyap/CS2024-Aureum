@@ -5,7 +5,7 @@
     padding: 70px;
     color: black;
     font-size: 10px;
-    font-family: Inter_font;
+    font-family: 'Inter', sans-serif;
 }
 #footer a{
     color: black;
@@ -38,7 +38,3 @@
 #footer span {
     margin-bottom: 10px;
 }
-@font-face {
-    font-family: Inter_font;
-    src: url(../../../../font/Inter-Regular.ttf);
-  }
