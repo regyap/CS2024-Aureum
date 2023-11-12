@@ -6,6 +6,7 @@ import Page2 from "./pages/Page2";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import NavigationBar from "./components/NavBar/NavigationBar.jsx";
+import Login from "./pages/Login.jsx";
 
 function App() {
   const [count, setCount] = useState(1);
@@ -16,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={Home}></Route>
-          <Route path="/Page2" Component={Page2}></Route>
+          <Route path="/Login" Component={Login}></Route>
           <Route path="/Footer" Component={Footer}></Route>
         </Routes>
       </BrowserRouter>

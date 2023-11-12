@@ -9,14 +9,21 @@ function NavigationBar() {
     <Navbar
       collapseOnSelect
       expand="md"
+      sticky="top"
       className="bg-body-tertiary nav-container"
     >
       <div id="first-row">
         <Navbar.Brand href="#home">Aureum</Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          className="custom-toggle"
-        />
+
+        <div>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="custom-toggle"
+          />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <div className="profile">Login</div>
+          </Navbar.Collapse>
+        </div>
       </div>
       <div id="second-row">
         <Navbar.Collapse id="responsive-navbar-nav">
