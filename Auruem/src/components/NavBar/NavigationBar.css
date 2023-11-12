@@ -1,0 +1,25 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container #first-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+}
+
+.nav-container #first-row .custom-toggle {
+  border: none;
+}
+
+.nav-container #first-row .custom-toggle:hover {
+  border-color: transparent;
+  border: none;
+}
+
+.nav-container #first-row .custom-toggle:focus {
+  border-color: transparent;
+  box-shadow: none;
+}

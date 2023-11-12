@@ -8,30 +8,26 @@ function CarouselItem(props) {
     <Container id="container">
       <Row>
         <Col className="mb-3 mt-3 px-3">
-          <img className="product_image" src={dummy} alt="ItemPicture" />
+          <img className="product" src={dummy} alt="ItemPicture" />
         </Col>
       </Row>
       <Row>
-        <span id="collection_name">{props.data.collection}</span>
+        <span className="collection_name">{props.data.collection}</span>
       </Row>
       <Row>
-        <span id="product_name" className="mb-4">
-          {props.data.name}
-        </span>
+        <span className="product_name mb-4">{props.data.name}</span>
       </Row>
       <Row className="mx-3">
-        <Col className="mb-3 px-3">
-          <p id="product_description">{props.data.description}</p>
+        <Col className="px-3">
+          <p className="product_description">{props.data.description}</p>
         </Col>
       </Row>
       <Row>
-        <span id="product_volume" className="mb-2">
-          {props.data.volume}
-        </span>
+        <span className="product_volume mb-2">{props.data.volume}</span>
       </Row>
-      <Row>
-        <Col md={{ span: 6, offset: 3 }} className="mb-3">
-          <button type="button" id="view_button">
+      <Row className="justify-content-center">
+        <Col md={8} className="mb-3">
+          <button type="button" className="button">
             View More
           </button>
         </Col>

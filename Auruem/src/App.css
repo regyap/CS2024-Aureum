@@ -1,7 +1,32 @@
 #root {
   /* max-width: 1280px; */
-  margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
-  width: 100vw; /* Full width of the viewport */
+  margin: 2rem;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.product {
+  width: 20%;
+  height: 15%;
+  object-fit: cover;
+}
+
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+
+.button {
+  border-radius: 0px;
+  background-color: white;
+  border: 1px solid #000000;
+  color: black;
+  padding: auto;
+  font-size: 0.8em;
+}
+
+.text {
+  font-size: 0.6em;
 }

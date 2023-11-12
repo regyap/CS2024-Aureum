@@ -1,0 +1,25 @@
+#banner {
+  margin-bottom: 20%;
+}
+
+#banner .overlay-content {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  min-width: 500px;
+  min-height: 200px;
+  border: 1px solid #000000;
+}
+
+.overlay-text p,
+.overlay-text button {
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+#banner .img-fluid-stretch {
+  width: 100%; /* Image takes up the full width of the container */
+  height: 300px; /* Image takes up the full height of the container */
+}

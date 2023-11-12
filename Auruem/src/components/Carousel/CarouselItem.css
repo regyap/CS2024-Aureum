@@ -1,41 +1,33 @@
 #container {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   /* background-color: bisque; */
   text-align: center;
   /* min-width: 500px; */
   height: auto;
 }
 
-.product_image {
+#container .product_image {
   width: 100%;
   height: auto;
 }
 
-#collection_name {
+#container .collection_name {
   color: lightgray;
   text-transform: uppercase;
-  font-size: large;
+  font-size: 1em;
 }
 
-#product_name {
+#container .product_name {
   color: black;
   text-transform: uppercase;
-  font-size: xx-large;
+  font-size: 1em;
 }
 
-#product_description {
-  font-size: large;
+#container .product_description {
+  font-size: 0.8em;
 }
 
-#product_volume {
-  font-size: large;
-}
-
-#view_button {
-  border-radius: 0px;
-  background-color: white;
-  border: 1px solid #000000;
-  color: black;
-  width: 100%;
-  font-size: x-large;
+#container .product_volume {
+  font-size: 1em;
+  text-transform: uppercase;
 }

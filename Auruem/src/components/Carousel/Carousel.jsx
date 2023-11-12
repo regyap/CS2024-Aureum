@@ -53,9 +53,9 @@ function Carousel() {
 
   return (
     <Container fluid className="carousel-container">
-      <Row className="carousel-row">
+      <Row className="justify-content-between">
         {displayItems.map((item, index) => (
-          <Col key={index} xs={4} className="carousel-col">
+          <Col key={index} xs={3} className="carousel-col p-0">
             <CarouselItem data={item} />
           </Col>
         ))}
