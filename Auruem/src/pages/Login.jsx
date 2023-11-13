@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./Login.css";
@@ -164,6 +165,11 @@ const AuthPage = () => {
 
   return (
     <div className="page-container">
+      <Helmet>
+        <title>Login</title>
+        <meta name="LoginPage" content="To login to website" />
+        {/* Add other meta tags or link tags as needed */}
+      </Helmet>
       {isLogin ? (
         <LoginForm onToggle={handleToggle} />
       ) : (

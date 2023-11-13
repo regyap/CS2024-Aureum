@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer/Footer";
 import NavigationBar from "./components/NavBar/NavigationBar.jsx";

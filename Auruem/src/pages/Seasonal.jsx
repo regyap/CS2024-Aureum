@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import seasonalBanner from "../assets/seasonal_banner.png";
 import dummy from "../assets/dummy.jpg";
 import "./Seasonal.css";
@@ -7,6 +8,11 @@ import "./Seasonal.css";
 function Seasonal() {
   return (
     <Container className="p-0 m-0" fluid>
+      <Helmet>
+        <title>Your Page Title</title>
+        <meta name="description" content="Your page description" />
+        {/* Add other meta tags or link tags as needed */}
+      </Helmet>
       <Row>
         <img src={seasonalBanner} alt="ItemPicture" fluid />
       </Row>
