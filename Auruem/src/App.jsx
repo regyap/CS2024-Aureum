@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Home from "./pages/Home.jsx";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer.jsx";
 import NavigationBar from "./components/NavBar/NavigationBar.jsx";
 import Login from "./pages/Login.jsx";
 import Seasonal from "./pages/Seasonal.jsx";
