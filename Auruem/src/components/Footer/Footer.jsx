@@ -5,20 +5,13 @@ function Footer() {
   return (
     <>
       <div id='footer'>
+        <div class='outerBox'>
             <hr/>
             <div class='content'>
-                <div>
-                    <div class='compDetails'>
-                        <span class='compName'>AURUEM</span>
-                        <span class='compAdd'>High Perfumery from the land of Mexico, founded in 1989</span>
-                    </div>
-                    <div>
-                        <span>FOLLOW US</span>
-                        <a href="">Intagram</a>
-                        <a href="">Tiktok</a>
-                        <a href="">Twitter</a>
-                        <a href="">Facebook</a>
-                    </div>
+            
+                <div class='compDetails'>
+                    <span class='compName'>AURUEM</span>
+                    <span class='compAdd'>High Perfumery from the land of Mexico, founded in 1989</span>
                 </div>
                 <div>
                     <span>ABOUT US</span>
@@ -38,11 +31,24 @@ function Footer() {
                     <a href="">Terms and Conditions</a>
                     <a href="">Privacy Policy</a>
                 </div>
+                <div>
+                    <span>FOLLOW US</span>
+                    <a href="">Intagram</a>
+                    <a href="">Tiktok</a>
+                    <a href="">Twitter</a>
+                    <a href="">Facebook</a>
+                </div>
             </div>
             <hr/>
-            <div class='logo'>
+        </div>
+        <div class='logo'>
+            <div>
+                © Aureum 2023. All rights reserved.
+            </div>
+            <div>
                 logo
             </div>
+        </div>
       </div>
     </>
   );
