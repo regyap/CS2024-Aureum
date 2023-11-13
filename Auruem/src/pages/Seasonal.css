@@ -1,0 +1,14 @@
+/* .seasonal-banner {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+} */
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  object-fit: cover;
+}

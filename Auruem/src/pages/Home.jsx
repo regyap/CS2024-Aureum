@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import Footer from "../components/Footer/Footer";
 import Mailing from "../components/MailingList/Mailing";
 import ImageOverlay from "../components/ImageOverlay/ImageOverlay";
@@ -11,6 +12,11 @@ import Carousel from "../components/Carousel/Carousel";
 function Home() {
   return (
     <Container className="p-0" fluid>
+      <Helmet>
+        <title>Your Page Title</title>
+        <meta name="description" content="Your page description" />
+        {/* Add other meta tags or link tags as needed */}
+      </Helmet>
       <Row className="p-0">
         <Banner />
       </Row>
