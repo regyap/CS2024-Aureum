@@ -17,10 +17,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={Home}></Route>
-          <Route path="/Login" Component={Login}></Route>
-          <Route path="/Footer" Component={Footer}></Route>
+          <Route path="/login" Component={Login}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

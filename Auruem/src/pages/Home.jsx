@@ -47,9 +47,6 @@ function Home() {
 
         <Mailing />
       </Row>
-      <Row>
-        <Footer />
-      </Row>
     </Container>
   );
 }

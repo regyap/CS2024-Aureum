@@ -8,8 +8,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
   overflow: hidden;
   padding: 10px 50px 10px 50px;
+  margin: 50px 0px 25px 50px;
   width: 50%;
-  margin-top: 10%;
   max-width: 500px;
   min-width: 200px;
 }
@@ -22,8 +22,36 @@
 .button {
   width: 100%;
   background-color: #f8f5f0;
+  border: transparent;
 }
 
 input {
+  width: 100%;
+  color: black;
+}
+
+.page-title {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.password-conditions {
+  text-align: left;
+  background-color: #f6f1eb;
+}
+
+#DOB {
+  width: 100%;
+}
+
+.customDatePickerWidth,
+.customDatePickerWidth > div.react-datepicker-wrapper,
+.customDatePickerWidth
+  > div
+  > div.react-datepicker__input-container
+  .customDatePickerWidth
+  > div
+  > div.react-datepicker__input-container
+  input {
   width: 100%;
 }
