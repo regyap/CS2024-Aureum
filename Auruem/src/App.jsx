@@ -14,6 +14,7 @@ import Mission from "./pages/Mission.jsx";
 import Contact from "./pages/Contact.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import TnC from "./pages/TnC.jsx";
+import FindABoutique from "./pages/FindABoutique.jsx";
 import Locate from "./pages/Locate.jsx";
 import Custom from "./pages/Custom.jsx";
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/faq" Component={FAQ}></Route>
           <Route path="/tnc" Component={TnC}></Route>
           <Route path="/locate" Component={Locate}></Route>
+          <Route path="/findaboutique" Component={FindABoutique}></Route>
           <Route path="/custom" Component={Custom}></Route>
         </Routes>
       </BrowserRouter>

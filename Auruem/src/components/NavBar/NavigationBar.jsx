@@ -1,19 +1,31 @@
+import React, { useState } from "react";
 import { Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import logo_black from "../../assets/logo_black.png";
+import profile from "../../assets/profile.svg";
 import "./NavigationBar.css";
 
 function NavigationBar() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
   return (
     <Navbar
       collapseOnSelect
       expand="md"
       sticky="top"
       className="bg-body-tertiary nav-container"
+      expanded={expanded}
+      onToggle={handleToggle}
     >
       <div id="first-row">
-        <Navbar.Brand href="#home">Aureum</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img src={logo_black} alt="Logo" />
+        </Navbar.Brand>
 
         <div>
           <Navbar.Toggle
@@ -21,7 +33,7 @@ function NavigationBar() {
             className="custom-toggle"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <div className="profile">Login</div>
+            {expanded ? "" : <img src={profile} alt="Profile Icon" />}
           </Navbar.Collapse>
         </div>
       </div>

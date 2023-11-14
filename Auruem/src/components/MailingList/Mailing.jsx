@@ -4,7 +4,7 @@ import "./Mailing.css";
 
 function Mailing() {
   return (
-    <Container>
+    <Container className="newsletter-container">
       <Row className="justify-content-center">
         <Col xs={12} md={8} className="text-center">
           <h2>THE OLFACTIVE SOCIETY</h2>

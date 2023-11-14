@@ -4,7 +4,7 @@
 
 #banner .overlay-content {
   position: absolute;
-  top: 90%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -19,7 +19,8 @@
   margin: 10px; /* Adjust the margin as needed */
 }
 
-#banner .img-fluid-stretch {
+#banner .vid-fluid-stretch {
   width: 100%; /* Image takes up the full width of the container */
-  height: 300px; /* Image takes up the full height of the container */
+  height: 35rem; /* Image takes up the full height of the container */
+  object-fit: cover;
 }

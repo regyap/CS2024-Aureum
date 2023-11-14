@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./ImageOverlay.css";
-import dummy from "../../assets/dummy.jpg";
+import banner from "../../assets/experience_banner.png";
 
 const ImageOverlay = () => {
   return (
-    <div className="position-relative p-0">
-      <img className="img-fluid-stretch" src={dummy} alt="ItemPicture" />
+    <div className="position-relative p-0 mb-5">
+      <img className="img-fluid-stretch" src={banner} alt="ItemPicture" />
       <div className="overlay-text">
         <p className="text-white">Visitor's Centre</p>
         <p className="text-white">

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./CarouselItem.css";
+import productImg1 from "../../assets/product1_transparent.png";
 import dummy from "../../assets/dummy.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -8,7 +9,7 @@ function CarouselItem(props) {
     <Container id="container">
       <Row>
         <Col className="mb-3 mt-3 px-3">
-          <img className="product" src={dummy} alt="ItemPicture" />
+          <img className="product_image" src={productImg1} alt="ItemPicture" />
         </Col>
       </Row>
       <Row>

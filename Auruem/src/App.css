@@ -7,16 +7,9 @@
   height: 100vh;
 }
 
-.product {
-  width: 20%;
-  height: 15%;
-  object-fit: cover;
-}
-
 .spacebetween {
   display: flex;
   justify-content: space-between;
-  background-color: antiquewhite;
 }
 
 .button {

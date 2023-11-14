@@ -1,0 +1,30 @@
+#valueBanners .text1{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+#valueBanners .text2{
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#valueBanners .text3{
+    font-size: 14px;
+}
+#valueBanners .bannerImg{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 350px;
+}
+#valueBanners .whiteBox{
+    width: 100%;
+    height: 350px;
+}
+#valueBanners .imageBanner{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-image: url(../../assets/products_main_banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}

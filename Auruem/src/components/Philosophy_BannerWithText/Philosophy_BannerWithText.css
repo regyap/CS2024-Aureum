@@ -1,0 +1,17 @@
+#mainBanner .text1{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 5px;
+}
+#mainBanner .text2{
+    font-size: 70px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#mainBannerImg{
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+}
+#mainBannerImg img{
+    opacity: 0.6;
+}
