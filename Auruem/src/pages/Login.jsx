@@ -53,7 +53,7 @@ const LoginForm = ({ onToggle }) => {
 
 const RegisterForm = ({ onToggle }) => {
   return (
-    <Container className="card-container">
+    <Container className="card-container p-5">
       <Row>
         <Col>
           <h2 className="page-title">Register</h2>
