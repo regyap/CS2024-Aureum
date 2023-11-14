@@ -1,0 +1,79 @@
+#customisationSection{
+    font-family: 'Cormorant Garamond', serif;
+}
+#customisationSection #productImage{
+    height: 560px;
+    width: 560px;
+}
+#customisationSection #productImage img{
+    height: 70%;
+    margin-top: 70px;
+}
+#customisationSection .productName{
+    font-size: 24px;
+}
+#customisationSection .desc{
+    font-size: 14px;
+}
+#customisationSection .selectLabel{
+    font-size: 14px;
+    font-style: italic;
+}
+#customisationSection .addCustomButton{
+    font-size: 14px;
+    color: black;
+    font-style: italic;
+}
+#customisationSection .rightCol{
+    text-align: start;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#customisationSection .selectButtons{
+    border: 1px solid #b7b4b1;
+    width: 125px;
+    height: 65px;
+    color: #b7b4b1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+}
+#customisationSection .selectButtons:has(input[type="radio"]:checked){
+    background-color: #b7b4b1;
+    color: white;
+}
+#customisationSection input[type="radio"]{
+    display: none;
+    width: 125px;
+    height: 65px;
+}
+#customisationSection label{
+    text-align: start;
+    width: 125px;
+    height: 65px;
+    cursor: pointer;
+}
+.popupTitle{
+    font-family: 'Cormorant Garamond', serif;
+}
+.popupContent{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+.popupContent hr{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#popup_productImage img{
+    height: 350px;
+    width: 350px;
+}
+.popupRightCol{
+    height: 240px;
+    padding-top: 50px;
+}
+#bottleText{
+    font-size: 20px;
+}
