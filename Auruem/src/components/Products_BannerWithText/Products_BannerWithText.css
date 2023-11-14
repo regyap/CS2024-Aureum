@@ -1,0 +1,19 @@
+#mainBanner .text1{
+    font-size: 24px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#mainBanner .text2{
+    font-size: 70px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#mainBanner .text3{
+    font-size: 14px;
+}
+#mainBannerImg{
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+}
+#mainBannerImg img{
+    opacity: 0.6;
+}

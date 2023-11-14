@@ -10,7 +10,7 @@ function Footer() {
             <div class='content'>
             
                 <div class='compDetails'>
-                    <span class='compName'>AURUEM</span>
+                    <span class='compName'>AUREUM</span>
                     <span class='compAdd'>High Perfumery from the land of Mexico, founded in 1989</span>
                 </div>
                 <div>

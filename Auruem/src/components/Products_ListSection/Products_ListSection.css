@@ -1,0 +1,10 @@
+#productImage{
+    height: 320px;
+    width: 320px;
+}
+#productImage img{
+    height: 80%;
+}
+.productName{
+    font-weight: bold;
+}

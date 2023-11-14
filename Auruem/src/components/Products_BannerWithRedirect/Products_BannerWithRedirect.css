@@ -1,0 +1,17 @@
+#collectionsBanner .text1{
+    font-size: 40px;
+    font-weight: bold;
+}
+#collectionsBanner .overlay-text{
+    width: 90%;
+    text-align: start;
+}
+#collectionsBannerImg{
+    height: 400px;
+    width: fit-content;
+    background-color: black;
+    overflow: hidden;
+}
+#collectionsBannerImg img{
+    /* opacity: 0.5; */
+}
