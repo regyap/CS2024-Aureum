@@ -1,0 +1,137 @@
+html,
+body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+
+}
+
+html {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* padding-right: 0;
+    margin-right: -10px; */
+
+}
+
+.findaboutique img {
+    height: 100%;
+    width: 55%;
+}
+
+.storeheader {
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.storeheaderdesc {
+    display: flex;
+    justify-content: start;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+.findaboutiquestores {
+    padding-top: 20px;
+    margin-left: 22.5%;
+    margin-right: auto;
+
+    @media (min-width: 50px) and (max-width: 600px) {
+        margin-right: auto;
+        /* width: 1000px; */
+        /* One div per row on smaller screens */
+    }
+}
+
+.allstores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.storename {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    align-items: start;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 15px;
+
+    /* padding-right: 200px; */
+    height: 420px;
+
+    /* flex: 1; */
+    width: 610px;
+    max-width: calc(100% - 16px);
+    margin-left: 0px;
+    /* padding-right: 200px; */
+    margin: 8px;
+
+    @media (min-width: 50px) and (max-width: 600px) {
+        width: 500px;
+        margin-right: 0;
+        padding: 0;
+        /* margin-right: 100px; */
+        /* width: 1000px; */
+        /* One div per row on smaller screens */
+    }
+}
+
+.storename span {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    white-space: pre-wrap;
+
+}
+
+.storename p {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 12px;
+    padding-bottom: 6px;
+
+
+
+
+}
+
+.storename .addr {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
+
+.storename input[type="submit"] {
+    width: 170px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 10px;
+    border: 1px solid black;
+
+
+}
+
+.storename input[type="submit"]:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition-duration: 0.1s;
+
+
+
+}
