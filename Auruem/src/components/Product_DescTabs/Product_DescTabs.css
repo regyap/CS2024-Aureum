@@ -1,0 +1,52 @@
+#descTabsSection{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descTabsSection .tabHeaders{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    border-bottom: 1px solid #b7b4b1;
+}
+#descTabsSection .tabHeaders a{
+    color: black;
+    width: 170px;
+}
+
+#descriptionTab{
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: left;
+    font-size: 12px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descriptionTab .productImage img{
+    height: 100%;
+}
+
+#notesTab{
+    display: none;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+#compositionTab{
+    display: none;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: left;
+    font-size: 14px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#compositionTab .composotionImage img{
+ width: 100%;
+}
+#compositionTab .elementName{
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 16px;
+}
