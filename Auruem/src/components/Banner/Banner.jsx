@@ -2,11 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Banner.css";
 import dummy from "../../assets/dummy.jpg";
+import banner from "../../assets/home_banner.mp4";
 
 const Banner = () => {
   return (
     <div id="banner" className="position-relative">
-      <img className="img-fluid-stretch" src={dummy} alt="ItemPicture" />
+      <video className="vid-fluid-stretch" autoPlay muted loop>
+        <source src={banner} type="video/mp4" />
+      </video>
       <div className="overlay-content">
         <h3>ATLIER OF THE WIND</h3>
         <p>

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import BannerWithText from "../components/Philosophy_BannerWithText/Philosophy_BannerWithText";
+import ValueBanners from "../components/Philosophy_ValueBanners/Philosophy_ValueBanners";
 
 function Mission() {
   return (
@@ -9,7 +11,8 @@ function Mission() {
         <meta name="description" content="Your page description" />
         {/* Add other meta tags or link tags as needed */}
       </Helmet>
-      <div>Our Philosophy Mission and Vision</div>
+      <BannerWithText/>
+      <ValueBanners/>
     </>
   );
 }

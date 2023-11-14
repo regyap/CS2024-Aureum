@@ -13,5 +13,6 @@
 
 .img-fluid-stretch {
   width: 100%; /* Image takes up the full width of the container */
-  height: 300px; /* Image takes up the full height of the container */
+  height: 400px; /* Image takes up the full height of the container */
+  object-fit: cover;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './Footer.css'
+import logo_black from "../../assets/logo_black.png";
 
 function Footer() {
   return (
@@ -46,7 +47,7 @@ function Footer() {
                 © Aureum 2023. All rights reserved.
             </div>
             <div>
-                logo
+                <img src={logo_black} />
             </div>
         </div>
       </div>

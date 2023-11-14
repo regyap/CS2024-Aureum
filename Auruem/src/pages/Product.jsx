@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import "./Product.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Customisation from "../components/Product_Customisation/Product_Customisation";
+import DescTabs from "../components/Product_DescTabs/Product_DescTabs";
 
 function Product() {
   return (
@@ -13,6 +14,7 @@ function Product() {
         {/* Add other meta tags or link tags as needed */}
       </Helmet>
       <Customisation/>
+      <DescTabs/>
     </Container>
   );
 }
