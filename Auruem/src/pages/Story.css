@@ -1,0 +1,20 @@
+.storybanner {
+  background-image: url("../assets/Story_Banner.png");
+  background-color: #cccccc;
+  height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.inspiration{
+    padding: 5rem 10rem;
+}
+.inspiSection{
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+}
+
+@media (min-width: 50px) and (max-width: 600px) {
+}
