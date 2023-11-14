@@ -15,8 +15,8 @@
 
 #descriptionTab{
     display: block;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 56px;
+    margin-bottom: 56px;
     text-align: left;
     font-size: 12px;
     width: 95%;
@@ -29,14 +29,30 @@
 
 #notesTab{
     display: none;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#notesTab p{
+    width: 70%;
+    margin: auto;
+    height: fit-content;
+    margin-top: 50%;
+}
+#notesTab .row1{
+    margin-bottom: 76px;
+}
+#notesTab .row2 p{
+    margin-bottom: 76px;
 }
 
 #compositionTab{
     display: none;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 56px;
+    margin-bottom: 56px;
     text-align: left;
     font-size: 14px;
     width: 95%;

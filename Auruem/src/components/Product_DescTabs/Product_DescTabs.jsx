@@ -5,6 +5,8 @@ import product1_descImg from "../../assets/product1_desc_img.png";
 import product1_compositionImg1 from "../../assets/product1_composition_img1.png";
 import product1_compositionImg2 from "../../assets/product1_composition_img2.png";
 import product1_compositionImg3 from "../../assets/product1_composition_img3.png";
+import product1_notesImg1 from "../../assets/product1_notes_img1.png";
+import product1_notesImg2 from "../../assets/product1_notes_img2.png";
 
 const DescTabs = () => {
 
@@ -99,7 +101,43 @@ const DescTabs = () => {
           </Row>
       </div>
       <div id="notesTab">
-          NOTES
+          <Col>
+            <Row className="row1">
+              <Col>
+                <div class="notesImage">
+                  <img src={product1_notesImg1} />
+                </div>
+              </Col>
+              <Col >
+                <p>
+                The wet freshness of nature after the rain is created 
+                by the combination of an Aquatic accord and Patchouli
+                essence. The aquatic accord is fresh and marine. When 
+                earthy notes of Patchouli are combined with the wet 
+                freshness of the aquatic it perfectly evokes the wet
+                nature after the rain
+                </p>
+              </Col>
+            </Row>
+            <Row className="row2">
+            <Col>
+                <p>
+                The wet freshness of nature after the rain is created 
+                by the combination of an Aquatic accord and Patchouli
+                essence. The aquatic accord is fresh and marine. When 
+                earthy notes of Patchouli are combined with the wet 
+                freshness of the aquatic it perfectly evokes the wet
+                nature after the rain
+                </p>
+              </Col>
+              <Col>
+                <div class="notesImage">
+                  <img src={product1_notesImg2} />
+                </div>
+              </Col>
+            </Row>
+          </Col>
+          
       </div>
       <div id="compositionTab">
           <Row>
