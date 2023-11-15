@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import "./Story.css";
+import "../index.css";
 import React from "react";
 import InspirationPic1 from "../assets/Story_InspirationPic1.png";
 import InspirationPic2 from "../assets/Story_InspirationPic2.png";
