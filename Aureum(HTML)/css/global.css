@@ -1,3 +1,20 @@
+/* font */
+@font-face {
+    font-family: Montserrat;
+    src: url("../../font/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url("../../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
+}
+
+html {
+    font-family: 'Coromorant Garamond', serif;
+
+}
+
+
 /* footer */
 #footer {
     height: fit-content;
@@ -6,7 +23,7 @@
     /* padding: 70px; */
     color: black;
     font-size: 10px;
-    font-family: "Inter", sans-serif;
+    font-family: "Coromorant Garamond", sans-serif;
     padding-top: 10px;
 }
 
@@ -28,8 +45,8 @@
     padding: 60px;
     padding-bottom: 30px;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #footer .content div {
