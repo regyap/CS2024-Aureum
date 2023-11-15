@@ -41,10 +41,21 @@ textarea:focus,
 }
 
 /*  */
+/* --- tablet --- */
+@media (min-width: 600px) and (max-width: 1000px) {
+  .container {
+    padding: 1rem 6rem;
+  }
+  .flexbox {
+    flex-direction: column;
+  }
+}
+
+/*  */
 /* --- mobile --- */
 @media (min-width: 50px) and (max-width: 600px) {
   .container {
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
   }
   .flexbox {
     flex-direction: column;
