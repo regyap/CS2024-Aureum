@@ -16,5 +16,7 @@
     align-items: flex-end;
 }
 
+/*  */
+/* --- mobile --- */
 @media (min-width: 50px) and (max-width: 600px) {
 }
