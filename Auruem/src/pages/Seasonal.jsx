@@ -64,7 +64,9 @@ function Seasonal() {
           molestias dolorum expedita, minus dicta, doloremque accusamus nam
           earum repellat impedit iure veniam?
         </p>
-        <button className="button">Discover</button>
+        <div>
+          <button className="button">Discover</button>
+        </div>
       </Row>
     </Container>
   );

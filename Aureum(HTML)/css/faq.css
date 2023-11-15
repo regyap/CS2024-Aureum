@@ -1,0 +1,38 @@
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.FAQ-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-body span {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.accordion-body span {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
+a {
+  color: inherit; /* Use the color of the parent element */
+}
