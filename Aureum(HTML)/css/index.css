@@ -1,27 +1,3 @@
-.navbar .logo {
-  height: 40px;
-  margin: 10px;
-  margin-right: 50px;
-}
-/* Modify NavBar */
-.navbar-toggler {
-  border: none;
-}
-.navbar-toggler:hover {
-  border-color: transparent;
-  border: none;
-}
-
-.navbar-toggler:focus {
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.index-content {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Banner */
 #banner {
   position: relative;
@@ -137,12 +113,6 @@
 .overlay-text p,
 .overlay-text button {
   margin: 10px; /* Adjust the margin as needed */
-}
-
-.img-fluid-stretch {
-  width: 100%; /* Image takes up the full width of the container */
-  height: 400px; /* Image takes up the full height of the container */
-  object-fit: cover;
 }
 
 .newsletter-container {
