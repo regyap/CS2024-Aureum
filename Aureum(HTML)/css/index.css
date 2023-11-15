@@ -1,22 +1,3 @@
-.navbar .logo {
-  height: 40px;
-  margin: 10px;
-  margin-right: 50px;
-}
-/* Modify NavBar */
-.navbar-toggler {
-  border: none;
-}
-.navbar-toggler:hover {
-  border-color: transparent;
-  border: none;
-}
-
-.navbar-toggler:focus {
-  border-color: transparent;
-  box-shadow: none;
-}
-
 .index-content {
   display: flex;
   flex-direction: column;
@@ -37,7 +18,8 @@
   background-color: rgb(255, 255, 255);
   min-width: 500px;
   min-height: 200px;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-text p,
@@ -155,4 +137,8 @@
 
 p > a {
   color: inherit; /* Set the color to inherit from its parent */
+}
+
+.grey {
+  color: lightgray;
 }

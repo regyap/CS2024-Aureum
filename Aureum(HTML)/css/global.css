@@ -120,3 +120,29 @@ hr {
   height: 40px;
   margin: 10px;
 }
+
+/* NavBar */
+.navbar .logo {
+  height: 40px;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.navbar .profile-logo {
+  height: 40px;
+  margin: 10px;
+}
+
+/* Modify NavBar */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:hover {
+  border-color: transparent;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
