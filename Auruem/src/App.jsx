@@ -22,22 +22,24 @@ function App() {
   return (
     <>
       <NavigationBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" Component={Home}></Route>
-          <Route path="/login" Component={Login}></Route>
-          <Route path="/seasonal" Component={Seasonal}></Route>
-          <Route path="/products" Component={Products}></Route>
-          <Route path="/product" Component={Product}></Route>
-          <Route path="/perks" Component={Perks}></Route>
-          <Route path="/story" Component={Story}></Route>
-          <Route path="/mission" Component={Mission}></Route>
-          <Route path="/contact" Component={Contact}></Route>
-          <Route path="/faq" Component={FAQ}></Route>
-          <Route path="/tnc" Component={TnC}></Route>
-          <Route path="/locate" Component={Locate}></Route>
-          <Route path="/findaboutique" Component={FindABoutique}></Route>
-          <Route path="/custom" Component={Custom}></Route>
+      <BrowserRouter basename="/cs2024/tut03grp5">
+        <Routes >
+          {/* <Route path="/" Component={Home}></Route> */}
+
+          <Route path="/" element={Home}></Route>
+          <Route path="/login" element={Login}></Route>
+          <Route path="/seasonal" element={Seasonal}></Route>
+          <Route path="/products" element={Products}></Route>
+          <Route path="/product" element={Product}></Route>
+          <Route path="/perks" element={Perks}></Route>
+          <Route path="/story" element={Story}></Route>
+          <Route path="/mission" element={Mission}></Route>
+          <Route path="/contact" element={Contact}></Route>
+          <Route path="/faq" element={FAQ}></Route>
+          <Route path="/tnc" element={TnC}></Route>
+          <Route path="/locate" element={Locate}></Route>
+          <Route path="/findaboutique" element={FindABoutique}></Route>
+          <Route path="/custom" element={Custom}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
