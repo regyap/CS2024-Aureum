@@ -9,8 +9,10 @@
   src: url("../../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
 }
 
-html {
+html,
+body {
   font-family: Montserrat, sans-serif;
+  text-align: center;
 }
 h1 {
   font-family: "Coromorant Garamond", serif;
@@ -29,6 +31,29 @@ p {
   font-size: 16px;
 }
 
+/*  */
+/* button */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/*  */
 /* footer */
 #footer {
   height: fit-content;
@@ -37,19 +62,16 @@ p {
   /* padding: 70px; */
   color: black;
   font-size: 10px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 10px;
 }
-
 #footer a {
   text-decoration: none;
   color: black;
 }
-
 #footer a:hover {
   color: rgb(71, 71, 71);
 }
-
 #footer .content {
   display: flex;
   flex-direction: row;
@@ -59,10 +81,9 @@ p {
   padding: 60px;
   padding-bottom: 30px;
   max-width: 800px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 #footer .content div {
   display: flex;
   flex-direction: column;
@@ -70,7 +91,6 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 #footer .compDetails {
   display: flex;
   flex-direction: column;
@@ -78,63 +98,25 @@ p {
   text-align: start;
   width: 125px;
 }
-
 #footer .compName {
   font-size: 15px;
 }
-
 #footer span {
   margin-bottom: 10px;
 }
-
 #footer .outerBox {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-
 hr {
   width: 100%;
   margin: auto;
 }
-
 #footer div {
   margin-bottom: 10px;
 }
-
 #footer .logo img {
   height: 40px;
   margin: 10px;
-}
-
-/* NavBar */
-
-.navbar .logo {
-  height: 40px;
-  margin: 10px;
-  margin-right: 50px;
-}
-/* Modify NavBar */
-.navbar-toggler {
-  border: none;
-}
-.navbar-toggler:hover {
-  border-color: transparent;
-  border: none;
-}
-
-.navbar-toggler:focus {
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.index-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.img-fluid-stretch {
-  width: 100%; /* Image takes up the full width of the container */
-  height: 400px; /* Image takes up the full height of the container */
-  object-fit: cover;
 }
