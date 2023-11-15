@@ -1,94 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Aureum</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/Css_Reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="./css/global.css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <link rel="stylesheet" type="text/css" href="./css/smartphone.css" />
-    <link rel="stylesheet" type="text/css" href="./css/tablet.css" />
-</head>
+    <script src="./js/index.js"></script>
+  </head>
 
-
-
-
-
-<body>
-
-
-
-
-    <div id='footer'>
-        <div class='outerBox'>
-            <hr />
-            <div class='content'>
-
-                <div class='compDetails'>
-                    <span class='compName'>AUREUM</span>
-                    <span class='compAdd'>High Perfumery from the land of Mexico, founded in 1989</span>
-                </div>
-                <div>
-                    <span>ABOUT US</span>
-                    <a href="">Our Story</a>
-                    <a href="">Our Philosophy</a>
-                </div>
-                <div>
-                    <span>CLIENT SERVICES</span>
-                    <a href="">Contact</a>
-                    <a href="">Delivery and Returns</a>
-                    <a href="">Olfactive Society</a>
-                    <a href="">FAQs</a>
-                    <a href="">Find a Boutique</a>
-                </div>
-                <div>
-                    <span>LEGAL</span>
-                    <a href="">Terms and Conditions</a>
-                    <a href="">Privacy Policy</a>
-                </div>
-                <div>
-                    <span>FOLLOW US</span>
-                    <a href="">Intagram</a>
-                    <a href="">Tiktok</a>
-                    <a href="">Twitter</a>
-                    <a href="">Facebook</a>
-                </div>
-            </div>
-            <hr />
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./image/logo_black.png" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gifting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our World</a>
+            </li>
+          </ul>
         </div>
-        <div class='logo'>
-            <div>
-                © Aureum 2023. All rights reserved.
-            </div>
-            <div>
-                <img src={logo_black} />
-            </div>
+      </div>
+    </nav>
+    <div id="banner">
+      <video class="vid-fluid-stretch" autoplay muted loop>
+        <source src="./image/home_banner.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay-content">
+        <h3>ATLIER OF THE WIND</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          exercitationem voluptatibus dolorum pariatur ipsam aut unde non,
+          numquam cumque ut sed aperiam ad repudiandae ab saepe magni,
+          perspiciatis voluptas enim.
+        </p>
+      </div>
+    </div>
+    <div class="index-content container-fluid p-0">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <img id="slideshowImage" class="slide-img" alt="Slideshow Image" />
         </div>
+      </div>
+      <span class="mx-auto">Best Seller</span>
+
+      <span class="mx-auto">Loved by many</span>
+
+      <!-- 3 Item Section -->
+      <div class="row mb-5">
+        <div class="col-10 mx-auto">
+          <div class="container-fluid p-0">
+            <div class="row products-container">
+              <!-- Item 1 -->
+              <div class="col-3 product p-0">
+                <img
+                  class="product_image"
+                  src="./image/product1_transparent.png"
+                  alt="Product Image"
+                />
+                <span class="collection_name">Collection 1</span>
+                <span className="product_name">Product Name</span>
+                <p className="product_description">Description</p>
+                <span class="product_volume">100ML</span>
+                <button type="button" class="button">View More</button>
+              </div>
+              <!-- Item 2 -->
+              <div class="col-3 product p-0">
+                <img
+                  class="product_image"
+                  src="./image/product1_transparent.png"
+                  alt="Product Image"
+                />
+                <span class="collection_name">Collection 1</span>
+                <span className="product_name">Product Name</span>
+                <p className="product_description">Description</p>
+                <span class="product_volume">100ML</span>
+                <button type="button" class="button">View More</button>
+              </div>
+              <!-- Item 3 -->
+              <div class="col-3 product p-0">
+                <img
+                  class="product_image"
+                  src="./image/product1_transparent.png"
+                  alt="Product Image"
+                />
+                <span class="collection_name">Collection 1</span>
+                <span className="product_name">Product Name</span>
+                <p className="product_description">Description</p>
+                <span class="product_volume">100ML</span>
+                <button type="button" class="button">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <img id="slideshowImage2" class="slide-img" alt="Slideshow Image" />
+        </div>
+      </div>
+
+      <span class="mx-auto">Discover</span>
+      <span class="mx-auto">The Aureum Collection</span>
+
+      <div class="row">
+        <div class="col-10 mx-auto three-collection">
+          <img
+            className="product"
+            src="./image/product1_transparent.png"
+            alt="Collection Image"
+          />
+          <img
+            className="product"
+            src="./image/product1_transparent.png"
+            alt="Collection Image"
+          />
+          <img
+            className="product"
+            src="./image/product1_transparent.png"
+            alt="Collection Image"
+          />
+        </div>
+      </div>
+
+      <div class="position-relative p-0 mb-5">
+        <img
+          class="img-fluid-stretch"
+          src="./image/experience_banner.png"
+          alt="ItemPicture"
+        />
+        <div class="overlay-text">
+          <p class="text-white">Visitor's Centre</p>
+          <p class="text-white">
+            THE AURUEM <br />
+            EXPERIENCE
+          </p>
+          <p class="text-white">
+            Our Fragrance Sommeliers await your arrival with open arms
+          </p>
+          <button class="button">LEARN MORE</button>
+        </div>
+      </div>
+
+      <div class="container newsletter-container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <h2>THE OLFACTIVE SOCIETY</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <p class="text">
+              Join the esteemed Olfactive Society simply by signing up to the
+              newsletter here – and along with all the latest news and offers
+              straight to your inbox, there’s even more marvellous perks
+              besides. Please note that all emails will be sent in English.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <p class="text">
+              Please note that all emails will be sent in English.
+            </p>
+          </div>
+        </div>
+        <div class="row p-0">
+          <div class="col-12 col-md-8 text-center p-0">
+            <input type="text" value="Enter your email address" />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <p class="text">
+              One's privacy is paramount. Aureum's will only divulge your data
+              to third parties in accordance with our Privacy Policy. Scout's
+              honour. For more information click here:
+              <a href="#">Privacy Policy,</a> <a href="#">Terms of Use</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <div id="footer">
+      <div class="outerBox">
+        <hr />
+        <div class="content">
+          <div class="compDetails">
+            <span class="compName">AUREUM</span>
+            <span class="compAdd"
+              >High Perfumery from the land of Mexico, founded in 1989</span
+            >
+          </div>
+          <div>
+            <span>ABOUT US</span>
+            <a href="">Our Story</a>
+            <a href="">Our Philosophy</a>
+          </div>
+          <div>
+            <span>CLIENT SERVICES</span>
+            <a href="">Contact</a>
+            <a href="">Delivery and Returns</a>
+            <a href="">Olfactive Society</a>
+            <a href="">FAQs</a>
+            <a href="">Find a Boutique</a>
+          </div>
+          <div>
+            <span>LEGAL</span>
+            <a href="">Terms and Conditions</a>
+            <a href="">Privacy Policy</a>
+          </div>
+          <div>
+            <span>FOLLOW US</span>
+            <a href="">Intagram</a>
+            <a href="">Tiktok</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="logo">
+        <div>© Aureum 2023. All rights reserved.</div>
+        <div>
+          <img src="{logo_black}" />
+        </div>
+      </div>
+    </div>
 
     <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
 
-        function myFunction(x) {
-            x.classList.toggle("change");
+      function toggleNav(x) {
+        $nav = document.getElementById("myNav");
+        if ($nav.style.height == "100%") {
+          document.getElementById("myNav").style.height = "0%";
+          myFunction(x);
+        } else {
+          document.getElementById("myNav").style.height = "100%";
+          myFunction(x);
         }
-
-        function toggleNav(x) {
-            $nav = document.getElementById("myNav");
-            if ($nav.style.height == "100%") {
-                document.getElementById("myNav").style.height = "0%";
-                myFunction(x);
-            }
-            else {
-                document.getElementById("myNav").style.height = "100%";
-                myFunction(x);
-            }
-
-        }
-
-
+      }
     </script>
-</body>
-
+  </body>
 </html>
