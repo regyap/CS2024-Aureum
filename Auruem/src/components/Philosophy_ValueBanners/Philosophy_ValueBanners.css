@@ -28,3 +28,9 @@
     background-position: cover;
     background-repeat: no-repeat;
 }
+#valueBanners .environment{
+    background-image: url(../../assets/philo_environment.avif);
+}
+#valueBanners .crueltyfree{
+    background-image: url(../../assets/philo_crueltyfree.webp);
+}

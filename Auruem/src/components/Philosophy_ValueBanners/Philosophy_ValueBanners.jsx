@@ -9,7 +9,7 @@ const ValueBanners = () => {
           <div class="whiteBox">
           </div>
           <div className="overlay-text">
-            <p className="text-black text1">WE VALUE</p>
+            <p className="text-black text1">WE STRIVE</p>
             <p className="text-black text2">
             LOYALTY
             </p>
@@ -20,7 +20,7 @@ const ValueBanners = () => {
             </p>
           </div>
         </div>
-        <div className="position-relative p-0 imageBanner">
+        <div className="position-relative p-0 imageBanner crueltyfree">
           <div class="bannerImg">
           </div>
           <div className="overlay-text">
@@ -50,13 +50,13 @@ const ValueBanners = () => {
             </p>
           </div>
         </div>
-        <div className="position-relative p-0 imageBanner">
+        <div className="position-relative p-0 imageBanner environment">
           <div class="bannerImg">
           </div>
           <div className="overlay-text">
-            <p className="text-white text1">WE PRODUCE</p>
+            <p className="text-white text1">WE CARE FOR</p>
             <p className="text-white text2">
-            CRUELTY-FREE
+            THE ENVIRONMENT
             </p>
             <p className="text-white text3">
             A willingness to go the extra mile to satisfy our clients. <br/>

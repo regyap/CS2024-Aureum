@@ -8,10 +8,10 @@
 }
 #collectionsBannerImg{
     height: 400px;
-    width: fit-content;
+    width: 100%;
     background-color: black;
     overflow: hidden;
 }
 #collectionsBannerImg img{
-    /* opacity: 0.5; */
+    width: 100%;
 }
