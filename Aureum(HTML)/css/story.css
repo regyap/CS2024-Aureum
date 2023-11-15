@@ -1,0 +1,110 @@
+.storybanner {
+  background-image: url("../image/Story_Banner.png");
+  background-color: #cccccc;
+  height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.storybanner article {
+  width: 35%;
+  padding-top: 15rem;
+}
+
+/* --- section --- */
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 10rem;
+}
+.inspiration h2 {
+  margin-bottom: 2rem;
+}
+.inspiSection {
+  width: 80%;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+}
+.inspiSection img {
+  flex: 1;
+}
+.inspiTextO {
+  flex: 1;
+  padding: 0rem 2rem 2rem 10rem;
+}
+.inspiTextE {
+  flex: 1;
+  padding: 0rem 10rem 2rem 2rem;
+}
+
+/*  */
+/* --- tablet --- */
+@media (min-width: 600px) and (max-width: 1000px) {
+  .storybanner {
+    /* width: 100vw; */
+  }
+  .inspiration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .storybanner article {
+    width: 50%;
+    padding-top: 15rem;
+  }
+  .inspiSection {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .inspiTextO,
+  .inspiTextE {
+    padding: 0rem;
+    min-width: 250px;
+    order: 2;
+  }
+  .inspiSection img {
+    order: 1;
+    width: 100%;
+  }
+}
+
+/*  */
+/* --- mobile --- */
+@media (min-width: 50px) and (max-width: 600px) {
+  .storybanner {
+    width: 100%;
+  }
+  .storybanner article {
+    width: 90%;
+    padding-top: 15rem;
+  }
+  .inspiration {
+    padding: 1rem 2rem;
+  }
+  .inspiSection {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .inspiTextO,
+  .inspiTextE {
+    padding: 0rem;
+    order: 2;
+  }
+  .inspiSection img {
+    order: 1;
+    width: 100%;
+  }
+}
