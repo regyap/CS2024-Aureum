@@ -10,7 +10,7 @@
 }
 
 html {
-    font-family: 'Coromorant Garamond', serif;
+    font-family: Montserrat;
 
 }
 
@@ -23,7 +23,8 @@ html {
     /* padding: 70px; */
     color: black;
     font-size: 10px;
-    font-family: "Coromorant Garamond", sans-serif;
+    font-family: Montserrat;
+    /* font-family: 'Coromorant Garamond', sans-serif; */
     padding-top: 10px;
 }
 
