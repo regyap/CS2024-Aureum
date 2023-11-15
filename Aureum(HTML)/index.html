@@ -36,6 +36,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0">
             <li class="nav-item">
@@ -200,7 +201,7 @@
         </div>
         <div class="row p-0">
           <div class="col-12 col-md-8 text-center p-0">
-            <input type="text" value="Enter your email address" />
+            <input type="text" placeholder="Enter your email address" />
           </div>
         </div>
         <div class="row justify-content-center">
@@ -261,22 +262,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
-
-      function toggleNav(x) {
-        $nav = document.getElementById("myNav");
-        if ($nav.style.height == "100%") {
-          document.getElementById("myNav").style.height = "0%";
-          myFunction(x);
-        } else {
-          document.getElementById("myNav").style.height = "100%";
-          myFunction(x);
-        }
-      }
-    </script>
   </body>
 </html>
