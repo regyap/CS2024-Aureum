@@ -1,6 +1,6 @@
 import React from "react";
 import "./Philosophy_BannerWithText.css";
-import mainBannerImg from "../../assets/products_main_banner.png";
+import mainBannerImg from "../../assets/philo_main_banner.webp";
 
 const BannerWithText = () => {
   return (
