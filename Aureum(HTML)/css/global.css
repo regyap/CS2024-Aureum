@@ -1,12 +1,12 @@
 /* font */
 @font-face {
   font-family: Montserrat;
-  src: url("../../font/Montserrat/Montserrat-VariableFont_wght.ttf");
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("../../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
+  src: url("../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
 }
 
 html,
@@ -14,18 +14,22 @@ body {
   font-family: Montserrat, sans-serif;
   text-align: center;
 }
+
 h1 {
   font-family: "Coromorant Garamond", serif;
   font-size: 70px;
 }
+
 h2 {
   font-family: "Coromorant Garamond", serif;
   font-size: 40px;
 }
+
 h3 {
   font-family: "Coromorant Garamond", serif;
   font-size: 24px;
 }
+
 p {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -45,9 +49,11 @@ button {
   transition: border-color 0.25s;
   color: white;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -65,13 +71,16 @@ button:focus-visible {
   font-family: "Inter", sans-serif;
   padding-top: 10px;
 }
+
 #footer a {
   text-decoration: none;
   color: black;
 }
+
 #footer a:hover {
   color: rgb(71, 71, 71);
 }
+
 #footer .content {
   display: flex;
   flex-direction: row;
@@ -84,6 +93,7 @@ button:focus-visible {
   margin-left: auto;
   margin-right: auto;
 }
+
 #footer .content div {
   display: flex;
   flex-direction: column;
@@ -91,6 +101,7 @@ button:focus-visible {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 #footer .compDetails {
   display: flex;
   flex-direction: column;
@@ -98,24 +109,30 @@ button:focus-visible {
   text-align: start;
   width: 125px;
 }
+
 #footer .compName {
   font-size: 15px;
 }
+
 #footer span {
   margin-bottom: 10px;
 }
+
 #footer .outerBox {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 hr {
   width: 100%;
   margin: auto;
 }
+
 #footer div {
   margin-bottom: 10px;
 }
+
 #footer .logo img {
   height: 40px;
   margin: 10px;
