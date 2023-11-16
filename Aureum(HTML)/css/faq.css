@@ -36,3 +36,7 @@
 a {
   color: inherit; /* Use the color of the parent element */
 }
+
+.faq-container {
+  text-align: left;
+}

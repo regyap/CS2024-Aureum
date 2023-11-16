@@ -11,6 +11,7 @@
 
 .img-fluid-stretch {
   height: 35rem;
+  object-fit: cover;
 }
 
 .img-margin {

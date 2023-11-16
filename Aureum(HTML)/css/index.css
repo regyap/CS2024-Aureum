@@ -4,20 +4,23 @@
 }
 
 /* Banner */
+:root {
+  --overlay-height: 95%; /* Adjust the height of the overlay element as a percentage */
+}
+
 #banner {
   position: relative;
-  margin-bottom: 20%;
+  margin-bottom: 20em;
 }
 
 #banner .overlay-content {
   position: absolute;
-  top: 95%;
+  top: var(--overlay-height);
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   background-color: rgb(255, 255, 255);
-  min-width: 500px;
-  min-height: 200px;
+  /* min-width: 500px; */
   /* border: 1px solid #000000; */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
