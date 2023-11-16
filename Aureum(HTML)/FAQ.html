@@ -1,32 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>FAQs</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- css -->
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/philosophy.css">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <script src="./js/faq.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-JHXFX1WK3L');
+      gtag("config", "G-JHXFX1WK3L");
     </script>
-</head>
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./image/logo_black.png" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-    <h1>FAQs</h1>
-</body>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gifting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our World</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="./Login.html">Login</a>
+            </li>
+          </ul>
+        </div>
 
+        <a href="./login.html" class="nav-item d-none d-lg-block"
+          ><img src="./image/profile.svg" class="profile-logo"
+        /></a>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-5 faq-container">
+      <div class="row p-0">
+        <div class="col-md-5 col-xs-12 px-3 mb-5">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  ONLINE BOUTIQUE
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span id="l1">HOW TO TRACK MY ORDER?</span>
+                  <span id="l2">CAN I CHANGE OR CANCEL MY ORDER?</span>
+                  <span id="l3"
+                    >CAN I CHANGE MY SHIPPING ADDRESS AFTER PLACING AN
+                    ORDER?</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  AUREUM PRODUCTS
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span id="l4">DO AUREUM PRODUCTS CONTAIN GLUTEN?</span>
+                  <span id="l5">DOES AUREUM TEST ON ANIMALS?</span>
+                  <span id="l6">ARE DIOR PRODUCTS HYPOALLERGENIC?</span>
+                  <span id="l7"
+                    >HOW DO I MAKE MY FRAGRANCE LAST AS LONG AS POSSIBLE WITHOUT
+                    ITS QUALITY ALTERING?</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  ACCOUNT
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span id="l8"
+                    >WHAT ARE THE ADVANTAGES OF CREATING AN ACCOUNT?</span
+                  >
+                  <span id="l9">CAN I MAKE CHANGES OR CANCEL MY ACCOUNT?</span>
+                  <span id="l10"
+                    >WHAT SHOULD I DO IF I FORGET MY PASSWORD?</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  CUSTOMER SERVICE
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span id="l11">HOW DO I CONTACT AUREUM?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-xs-12 px-3">
+          <div class="FAQ-content">
+            <h2>FAQ Aureum Fragrance</h2>
+            <h6 class="mt-3"><b>ONLINE BOUTIQUE</b></h6>
+            <span id="q1"><u>HOW TO TRACK MY ORDER?</u></span>
+            <p>
+              You may obtain your tracking number from your shipping
+              confirmation email or click <a href="#">here</a>.
+            </p>
+            <span id="q2"><u>CAN I CHANGE OR CANCEL MY ORDER?</u></span>
+            <p>
+              Once your order is successfully submitted, we regret to inform
+              that we are not able to accommodate to any changes to the order.
+              If you have any enquiries on your order, please contact us at
+              customerservice@aureum.com.sg and we will do our best to assist
+              you.
+            </p>
+            <span id="q3"
+              ><u
+                >CAN I CHANGE MY SHIPPING ADDRESS AFTER PLACING AN ORDER?</u
+              ></span
+            >
+            <p>
+              Unfortunately, we are unable to allow any shipping address changes
+              once an order is placed.
+            </p>
+
+            <h6 class="mt-3"><b>AUREUM PRODUCTS</b></h6>
+            <span id="q4"><u>DO AUREUM PRODUCTS CONTAIN GLUTEN?</u></span>
+            <p>
+              Aureum assures that all products do not contain gluten in the
+              ingredient formulas. Moreover, as a preventive measure and to go
+              further with the fight against cosmetic allergies, Aureum has
+              removed all proteins and wheat hydrolysis proteins from products.
+              However, despite of a high attention with the tracking system,
+              Aureum cannot certify that commodities have not been in contact
+              with gluten during the providers production process.
+            </p>
+            <span id="q5"><u>DOES AUREUM TEST ON ANIMALS?</u></span>
+            <p>Aureum does not test any product on animals.</p>
+            <span id="q6"><u>ARE DIOR PRODUCTS HYPOALLERGENIC?</u></span>
+            <p>
+              Aureum products are made to prevent customers from allergic
+              issues.
+            </p>
+            <span id="q7"
+              ><u
+                >HOW DO I MAKE MY FRAGRANCE LAST AS LONG AS POSSIBLE WITHOUT ITS
+                QUALITY ALTERING?</u
+              ></span
+            >
+            <p>
+              The classic enemies of perfume are heat, air, and light. We also
+              recommend that you keep your bottle tightly sealed, store it in
+              its original packaging if possible (if the environment where it is
+              kept is overly bright), and of course, keep it away from sources
+              of heat. You can make your fragrance last several years by
+              following these simple recommendations.
+            </p>
+
+            <h6 class="mt-3"><b>YOUR ACCOUNT</b></h6>
+            <span id="q8"
+              ><u>WHAT ARE THE ADVANTAGES OF CREATING AN ACCOUNT?</u></span
+            >
+            <p>
+              Creating an account enables you to track the delivery of your
+              Aureum purchases and helps you to consult your order history. You
+              can also update your contact information in your account.
+            </p>
+            <span id="q9"><u>CAN I MAKE CHANGES OR CANCEL MY ACCOUNT?</u></span>
+            <p>
+              Enter your email address and your password and, once you are
+              logged in, click on the options under "Your profile" to change or
+              delete information.
+            </p>
+            <span id="q10"
+              ><u>WHAT SHOULD I DO IF I FORGET MY PASSWORD?</u></span
+            >
+            <p>
+              You can easily reset your password by clicking on the account
+              symbol located in the menu at the top of our home page (on the
+              right side). You can click on “Forgotten Password” to enter your
+              email address. We will send you an email to reset your password.
+              Please check your spam folder if you didn’t receive the email.
+            </p>
+
+            <h6 class="mt-3"><b>CUSTOMER SERVICE</b></h6>
+            <span id="q11"><u>HOW DO I CONTACT AUREUM?</u></span>
+            <p>
+              Our Aureum ambassadors would be delighted to assist as you
+              discover the House of Dior and its products. You may contact our
+              Customer Service by customerservice@aureum.com.sg
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

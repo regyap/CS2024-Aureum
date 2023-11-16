@@ -7,11 +7,6 @@
   border-radius: 8px; /* Border radius to create rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
   overflow: hidden;
-  padding: 10px 50px 10px 50px;
-  margin: 50px 0px 25px 50px;
-  width: 50%;
-  max-width: 500px;
-  min-width: 200px;
 }
 
 .clickable {
@@ -28,6 +23,7 @@
 
 .page-title {
   float: left;
+  text-align: left;
   margin-bottom: 20px;
 }
 
