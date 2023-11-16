@@ -136,11 +136,9 @@ hr {
 #footer .logo img {
   height: 40px;
   margin: 10px;
-  <<<<<<< HEAD
+
 }
 
-=======
-}
 
 /* NavBar */
 .navbar .logo {
@@ -168,5 +166,3 @@ hr {
   border-color: transparent;
   box-shadow: none;
 }
-
->>>>>>>4c90a41cdf029052ee6f8a851d7c41b7d8481107
