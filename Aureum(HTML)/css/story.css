@@ -39,13 +39,13 @@
 }
 .inspiTextO {
   flex: 1;
-  padding: 0rem 2rem 2rem 7rem;
-  width: 300px;
+  padding: 0rem 1rem 1rem 5rem;
+  /* min-width: 300px; */
 }
 .inspiTextE {
   flex: 1;
-  padding: 0rem 7rem 2rem 2rem;
-  width: 300px;
+  padding: 0rem 5rem 1rem 1rem;
+  /* width: 300px; */
 }
 
 /*  */
@@ -100,7 +100,7 @@
   }
   .storybanner article {
     width: 90%;
-    padding-top: 15rem;
+    /* padding-top: 15rem; */
   }
   .inspiration {
     padding: 1rem 2rem;
@@ -121,7 +121,7 @@
     order: 2;
     width: 80%;
     max-width: 350px;
-    top: 10rem;
+    top: 1rem;
     position: absolute;
     z-index: 1;
   }
