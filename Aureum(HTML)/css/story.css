@@ -1,19 +1,21 @@
 .storybanner {
-  background-image: url("../image/Story_Banner.png");
-  background-color: #cccccc;
-  height: 640px;
+  /* background-image: url("../image/Story_Banner.png"); */
+  /* background-color: #cccccc; */
+  /* height: 60px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color: white;
+  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* filter:contrast(60%);
+  color:black; */
 }
 .storybanner article {
-  width: 35%;
-  padding-top: 15rem;
+  width: 45%;
+  /* padding-top: 25rem; */
 }
 
 /* --- section --- */
@@ -85,7 +87,8 @@
   .inspiSection img {
     order: 1;
     width: 100%;
-    opacity: 50%;
+    opacity: 40%;
+    filter: contrast(45%);
   }
 }
 
@@ -125,6 +128,7 @@
   .inspiSection img {
     order: 1;
     width: 100%;
-    opacity: 50%;
+    opacity: 40%;
+    filter: contrast(45%);
   }
 }
