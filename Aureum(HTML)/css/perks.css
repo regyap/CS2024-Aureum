@@ -1,0 +1,32 @@
+#perksContent{
+    width: 80%;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.subheader{
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.text{
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.images{
+    height: 300px;
+    margin-bottom: 20px;
+}
+.banner{
+    margin-top: 56px;
+    margin-bottom: 76px;
+}

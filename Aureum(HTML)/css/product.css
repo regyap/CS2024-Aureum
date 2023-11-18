@@ -1,0 +1,144 @@
+#mainBanner{
+    color: white;
+
+}
+
+#mainBanner .text1{
+    font-size: 24px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#mainBanner .text2{
+    font-size: 70px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#mainBanner .text3{
+    font-size: 14px;
+}
+
+#mainBannerImg{
+    height: 800px;
+    width: 100%;
+    background-image: url(../image/products_main_banner.png);
+    overflow: hidden;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+#mainBanner .filter{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+#mainBanner .overlay-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#mainBannerImg img{
+    opacity: 0.6;
+    width: 100%;
+}
+
+#productList{
+    margin-top: 206px;
+    margin-bottom: 206px;
+}
+#productImage{
+    height: 320px;
+    width: 320px;
+}
+#productImage img{
+    height: 80%;
+}
+.productName{
+    font-weight: bold;
+}
+
+#collectionsBanner .text1{
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+#collectionsBanner .overlay-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    vertical-align: middle;
+    height: fit-content;
+}
+#collectionsBannerImg{
+    height: 400px;
+    width: 100%;
+    background-image: url(../image/products_main_banner.png);
+    overflow: hidden;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+#collectionsBannerImg img{
+    width: 100%;
+}
+#collectionsBanner .filter{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+}
+
+.btn{
+    padding: 2px;
+}
+
+
+.ribbonbox {
+    width: 200px; height: 300px;
+    position: relative;
+    border: 1px solid #d1d1d1;
+    background: rgba(237, 214, 122, 0.387);
+  }
+  .ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+  }
+  .ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#FFCC67 0%, #D4A955 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+  }
+  .ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #D4A955;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #D4A955;
+  }
+  .ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #D4A955;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #D4A955;
+  }
+  

@@ -1,0 +1,231 @@
+#customisationSection {
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 74px;
+    margin-bottom: 74px;
+  }
+  #customisationSection #productImage {
+    height: 560px;
+    width: 560px;
+  }
+  #customisationSection #productImage img {
+    height: 70%;
+    margin-top: 70px;
+  }
+  #customisationSection .productName {
+    font-size: 24px;
+  }
+  #customisationSection .desc {
+    font-size: 14px;
+  }
+  #customisationSection .selectLabel {
+    font-size: 14px;
+    font-style: italic;
+  }
+  #customisationSection .addCustomButton {
+    font-size: 14px;
+    color: black;
+    font-style: italic;
+  }
+  #customisationSection .leftCol {
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 500px;
+  }
+  #customisationSection .rightCol {
+    text-align: start;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 500px;
+  }
+  #customisationSection .rightCol div {
+    margin-bottom: 12px;
+  }
+  
+  #customisationSection .selectButtons {
+    border: 1px solid #b7b4b1;
+    width: 125px;
+    height: 65px;
+    color: #b7b4b1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  #customisationSection .selectButtons label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  #customisationSection .selectButtons:has(input[type="radio"]:checked) {
+    background-color: #b7b4b1;
+    color: white;
+  }
+  #customisationSection input[type="radio"] {
+    display: none;
+    width: 125px;
+    height: 65px;
+  }
+  #customisationSection label {
+    text-align: start;
+    width: 125px;
+    height: 65px;
+    cursor: pointer;
+  }
+  .popupTitle {
+    font-family: "Cormorant Garamond", serif;
+  }
+  .popupContent {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+  }
+  .popupContent hr {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #popup_productImage {
+    height: 350px;
+    width: 350px;
+    background-image: url(../image/product3_transparent.png);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #popup_productImage .overlay-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .popupRightCol {
+    height: 50%;
+    padding: 50px;
+  }
+  .popupRightCol div {
+    margin-bottom: 22px;
+  }
+  #bottleText {
+    position: relative;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    width: 100%;
+    font-family: "Cormorant Garamond", serif;
+    padding-bottom: 30px;
+  }
+  .popupContent input {
+    width: 300px;
+    text-align: center;
+  }
+  
+  #descTabsSection {
+    width: 90%;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #descTabsSection .tabHeaders {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    border-bottom: 1px solid #b7b4b1;
+  }
+  #descTabsSection .tabHeaders a {
+    color: black;
+    width: 200px;
+  }
+  
+  #descriptionTab {
+    display: block;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    text-align: left;
+    font-size: 12px;
+    width: 95%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #descriptionTab p {
+    font-size: 12px;
+  }
+  #descriptionTab .productImage img {
+    height: 100%;
+  }
+  
+  #notesTab {
+    display: none;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    width: 95%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  #compositionTab {
+    display: none;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    width: 95%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  #elements {
+    margin-top: 206px;
+    margin-bottom: 206px;
+    text-align: left;
+    font-size: 14px;
+    width: 90%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #elements .elementImage img {
+    width: 100%;
+  }
+  #elements .elementName {
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 16px;
+  }
+  
+  #extra {
+    margin-top: 206px;
+    margin-bottom: 206px;
+    width: 90%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  #extra p {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 12px;
+  }
+  #extra .row1 {
+    margin-bottom: 76px;
+  }
+  #extra .row2 p {
+    margin-bottom: 76px;
+  }
+  #extra .extraImage img {
+    width: 100%;
+  }
+  #extra .col {
+    width: 530px;
+  }
+  
+  .button {
+    text-align: center;
+    padding: 2px;
+  }
+  

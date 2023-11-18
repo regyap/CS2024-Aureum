@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/philosophy.css">
@@ -27,7 +27,170 @@
 </head>
 
 <body>
-    <h1>Our Philosophy</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"
+        ><img src="./image/logo_black.png" class="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our World</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="./Login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="./login.html" class="nav-item d-none d-lg-block"
+        ><img src="./image/profile.svg" class="profile-logo"
+      /></a>
+    </div>
+  </nav>
+
+    <div id="mainBanner" class="position-relative p-0">
+        <div id="mainBannerImg">
+            <div class="filter">
+                <div class="overlay-text">
+                    <p class="text-white text1">LEARN MORE ABOUT</p>
+                    <p class="text-white text2">
+                        OUR PHILOSOPHY & MISSION
+                    </p>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+    <div id="valueBanners">
+        <div class="position-relative p-0 whiteBanner">
+          <div class="whiteBox">
+            <div class="overlay-text">
+                <p class="text-black text1">WE STRIVE</p>
+                <p class="text-black text2">
+                  LOYALTY
+                </p>
+                <p class="text-black text3">
+                  A willingness to go the extra mile to satisfy our clients. <br />
+                  An openness to listen to the Amouage lover. <br />
+                  An investment in our employees.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="position-relative p-0 imageBanner crueltyfree">
+          <div class="bannerImg">
+            <div class="overlay-text">
+                <p class="text-white text1">WE PRODUCE</p>
+                <p class="text-white text2">
+                  CRUELTY-FREE
+                </p>
+                <p class="text-white text3">
+                  A willingness to go the extra mile to satisfy our clients. <br />
+                  An openness to listen to the Amouage lover. <br />
+                  An investment in our employees.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="position-relative p-0 whiteBanner">
+          <div class="whiteBox">
+            <div class="overlay-text">
+                <p class="text-black text1">WE VALUE</p>
+                <p class="text-black text2">
+                  LOYALTY
+                </p>
+                <p class="text-black text3">
+                  A willingness to go the extra mile to satisfy our clients. <br />
+                  An openness to listen to the Amouage lover. <br />
+                  An investment in our employees.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="position-relative p-0 imageBanner environment">
+          <div class="bannerImg">
+            <div class="overlay-text">
+                <p class="text-white text1">WE CARE FOR</p>
+                <p class="text-white text2">
+                  THE ENVIRONMENT
+                </p>
+                <p class="text-white text3">
+                  A willingness to go the extra mile to satisfy our clients. <br />
+                  An openness to listen to the Amouage lover. <br />
+                  An investment in our employees.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="footer">
+        <div class="outerBox">
+          <hr />
+          <div class="content">
+            <div class="compDetails">
+              <span class="compName">AUREUM</span>
+              <span class="compAdd"
+                >High Perfumery from the land of Mexico, founded in 1989</span
+              >
+            </div>
+            <div>
+              <span>ABOUT US</span>
+              <a href="">Our Story</a>
+              <a href="">Our Philosophy</a>
+            </div>
+            <div>
+              <span>CLIENT SERVICES</span>
+              <a href="">Contact</a>
+              <a href="">Delivery and Returns</a>
+              <a href="">Olfactive Society</a>
+              <a href="">FAQs</a>
+              <a href="">Find a Boutique</a>
+            </div>
+            <div>
+              <span>LEGAL</span>
+              <a href="">Terms and Conditions</a>
+              <a href="">Privacy Policy</a>
+            </div>
+            <div>
+              <span>FOLLOW US</span>
+              <a href="">Intagram</a>
+              <a href="">Tiktok</a>
+              <a href="">Twitter</a>
+              <a href="">Facebook</a>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="logo">
+          <div>© Aureum 2023. All rights reserved.</div>
+          <div>
+            <img src="./image/logo_black.png" />
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>

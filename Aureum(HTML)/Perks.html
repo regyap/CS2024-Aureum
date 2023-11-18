@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Loyalty Program/ Perks</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/philosophy.css">
+    <link rel="stylesheet" href="./css/perks.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
     <script>
@@ -24,10 +29,127 @@
         gtag('config', 'G-JHXFX1WK3L');
     </script>
 </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./image/logo_black.png" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gifting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our World</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="./Login.html">Login</a>
+            </li>
+          </ul>
+        </div>
 
-<body>
-    <h1>Loyalty Program/ Perks</h1>
-</body>
+        <a href="./login.html" class="nav-item d-none d-lg-block"
+          ><img src="./image/profile.svg" class="profile-logo"
+        /></a>
+      </div>
+    </nav>
 
+    <div id="perksContent">
+      <img class="banner" src="image/perks_banner.png" />
+      <p class="header">JOIN THE OLFACTIVE SOCIETY</p>
+      <p class="subheader">THE RUMORS ARE TRUE</p>
+      <p class="text">
+        They say you never know what goes on behind closed doors. Well, people
+        are queuing around the block to have a nose behind this one. And we
+        could hardly blame them, now, could we?
+      </p>
+      <img class="images" src="image/perks_giftbox.png" />
+      <p class="subheader">BE FIRST TO KNOW ABOUT OUR UPCOMING PRODUCTS</p>
+      <p class="text">
+        They say you never know what goes on behind closed doors. Well, people
+        are queuing around the block to have a nose behind this one. And we
+        could hardly blame them, now, could we?
+      </p>
+      <img class="images" src="image/perks_giftbox.png" />
+      <p class="subheader">EXPECT FREE GIFTS</p>
+      <p class="text">
+        They say you never know what goes on behind closed doors. Well, people
+        are queuing around the block to have a nose behind this one. And we
+        could hardly blame them, now, could we?
+      </p>
+      <img class="images" src="image/perks_giftbox.png" />
+      <p class="subheader">EXCLUSIVE MEMBERS' SCENTS & SWEETS EVENTS</p>
+      <p class="text">
+        They say you never know what goes on behind closed doors. Well, people
+        are queuing around the block to have a nose behind this one. And we
+        could hardly blame them, now, could we?
+      </p>
+      <img class="images" src="image/perks_giftbox.png" />
+    </div>
+
+    <div id="footer">
+      <div class="outerBox">
+        <hr />
+        <div class="content">
+          <div class="compDetails">
+            <span class="compName">AUREUM</span>
+            <span class="compAdd"
+              >High Perfumery from the land of Mexico, founded in 1989</span
+            >
+          </div>
+          <div>
+            <span>ABOUT US</span>
+            <a href="">Our Story</a>
+            <a href="">Our Philosophy</a>
+          </div>
+          <div>
+            <span>CLIENT SERVICES</span>
+            <a href="">Contact</a>
+            <a href="">Delivery and Returns</a>
+            <a href="">Olfactive Society</a>
+            <a href="">FAQs</a>
+            <a href="">Find a Boutique</a>
+          </div>
+          <div>
+            <span>LEGAL</span>
+            <a href="">Terms and Conditions</a>
+            <a href="">Privacy Policy</a>
+          </div>
+          <div>
+            <span>FOLLOW US</span>
+            <a href="">Intagram</a>
+            <a href="">Tiktok</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="logo">
+        <div>© Aureum 2023. All rights reserved.</div>
+        <div>
+          <img src="./image/logo_black.png" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
