@@ -45,6 +45,11 @@ input {
   padding-left: 10px;
 }
 
+.check_box {
+  width: 50%;
+  /* height: 20px; */
+}
+
 .conditions {
-  margin-top: 2%;
+  margin-top: 1.5%;
 }
