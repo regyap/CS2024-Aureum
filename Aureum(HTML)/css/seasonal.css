@@ -6,7 +6,7 @@
 .img-cover {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .img-fluid-stretch {
@@ -16,15 +16,6 @@
 
 .img-margin {
   margin-bottom: 10%;
-}
-
-.button {
-  border-radius: 0px;
-  background-color: white;
-  border: 1px solid #000000;
-  color: black;
-  padding: auto;
-  font-size: 0.8em;
 }
 
 .vid-fluid-stretch {

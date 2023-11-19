@@ -21,6 +21,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/seasonal.css" />
+    <script src="./js/seasonal.js"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"
@@ -81,7 +82,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <div class="row p-0">
         <div class="col-12 p-0">
           <video class="vid-fluid-stretch" autoplay muted loop>
@@ -89,38 +90,38 @@
           </video>
         </div>
       </div>
-      <div class="row">
-        <h1>Christmas Wonderland</h1>
+      <div class="row my-5 px-3">
+        <h2>Christmas Wonderland</h2>
         <p class="text-center">
-          Ah, Halfeti - the jewel in Turkey's crown. With its wonderful mix of
-          Byzantine, Armenian, Egyptian, and Ottoman heritage. And a town
-          well-versed in trading with the world, too.
+          Whisk and swirl, every present a pearl. Join us on a journey to Gift
+          Haven, where joy and surprises unfurl
         </p>
       </div>
       <div class="row justify-content-center">
-        <div class="col-md-4 img-container p-1">
+        <div class="col-md-5 img-container p-1">
           <img
             class="img-cover"
             src="./image/seasonal1.png"
             alt="ItemPicture"
+            onmouseover="changeImage(this)"
+            onmouseout="restoreImage(this)"
+            data-original-src="./image/seasonal1.png"
+            data-hover-src="./image/seasonal_giftbox.png"
           />
         </div>
-        <div class="col-md-4 img-container p-1">
-          <img
-            class="img-cover"
-            src="./image/seasonal2.png"
-            alt="ItemPicture"
-          />
+        <div
+          class="col-md-5 img-container p-1"
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <p>Specially created for the festive spirits</p>
+          <a href="./product1_Detail.html"
+            ><button type="button" class="btn btn-dark button">
+              More Info
+            </button></a
+          >
         </div>
       </div>
-      <div class="row">
-        <p class="text-center">
-          Ah, Halfeti - the jewel in Turkey's crown. With its wonderful mix of
-          Byzantine, Armenian, Egyptian, and Ottoman heritage. And a town
-          well-versed in trading with the world, too.
-        </p>
-      </div>
-      <div class="row">
+      <div class="row p-0 mt-5">
         <img
           src="./image/seasonal_banner2.png"
           alt="ItemPicture"

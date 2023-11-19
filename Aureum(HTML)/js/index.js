@@ -1,3 +1,19 @@
+function changeImage(element) {
+  element.src = element.getAttribute("data-hover-src");
+}
+
+function restoreImage(element) {
+  element.src = element.getAttribute("data-original-src");
+}
+
+function changeImage2(element) {
+  element.src = element.getAttribute("data-hover-src");
+}
+
+function restoreImage2(element) {
+  element.src = element.getAttribute("data-original-src");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // First
   const slideshow1 = [

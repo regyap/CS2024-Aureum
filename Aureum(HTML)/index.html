@@ -60,13 +60,15 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+              <a class="nav-link" aria-current="page" href="./product.html"
+                >Fragrances</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Gifting</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Stores</a>
+              <a class="nav-link" href="./findaboutique.html">Stores</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Our World</a>
@@ -109,7 +111,7 @@
         <div class="col-12 col-md-10 mx-auto">
           <img
             id="slideshowImage"
-            class="slide-img"
+            class="img-container"
             alt="Slideshow of Perfume"
             src="./image/slideshow-1.jpg"
           />
@@ -117,8 +119,8 @@
       </div>
 
       <!-- 3 Item Section -->
-      <h5 class="mx-auto grey">Best Seller</h5>
-      <h2 class="mx-auto">Loved by many</h2>
+      <h5 class="mx-auto grey">BEST SELLERS</h5>
+      <h3 class="mx-auto">LOVED BY MANY</h3>
       <div class="row mb-5">
         <div class="col-10 mx-auto">
           <div class="container-fluid p-0">
@@ -128,15 +130,23 @@
                 <div class="product">
                   <img
                     class="product_image"
-                    src="./image/product1_transparent.png"
-                    alt="Perfume Product"
+                    src="./image/seasonal1.png"
+                    onmouseover="changeImage(this)"
+                    onmouseout="restoreImage(this)"
+                    data-original-src="./image/seasonal1.png"
+                    data-hover-src="./image/seasonal_giftbox.png"
                   />
-                  <span class="product_name">Product Name</span>
+                  <span class="product_name">CHERRY CLOUD</span>
                   <p class="product_description d-none d-sm-block">
-                    Description
+                    Luxury gentle fruity extrait de parfum. it is a fragrance
+                    well-liked by most.
                   </p>
                   <span class="product_volume">100ML</span>
-                  <button type="button" class="button">View More</button>
+                  <a href="./product1_Detail.html"
+                    ><button type="button" class="btn btn-dark button">
+                      View More
+                    </button></a
+                  >
                 </div>
               </div>
               <!-- Item 2 -->
@@ -144,15 +154,24 @@
                 <div class="product">
                   <img
                     class="product_image"
-                    src="./image/product1_transparent.png"
+                    src="./image/seasonal1.png"
                     alt="Perfume Product"
+                    onmouseover="changeImage2(this)"
+                    onmouseout="restoreImage2(this)"
+                    data-original-src="./image/seasonal1.png"
+                    data-hover-src="./image/giftbox.png"
                   />
-                  <span class="product_name">Product Name</span>
+                  <span class="product_name">PEAR & TONKA</span>
                   <p class="product_description d-none d-sm-block">
-                    Description
+                    Premium and intense ladies Extrait De Parfum. Loud yet
+                    elegant.
                   </p>
                   <span class="product_volume">100ML</span>
-                  <button type="button" class="button">View More</button>
+                  <a href="./product2_Detail.html"
+                    ><button type="button" class="btn btn-dark button">
+                      View More
+                    </button></a
+                  >
                 </div>
               </div>
               <!-- Item 3 -->
@@ -160,15 +179,24 @@
                 <div class="product">
                   <img
                     class="product_image"
-                    src="./image/product1_transparent.png"
+                    src="./image/product3_transparent.png"
                     alt="Perfume Product"
+                    onmouseover="changeImage2(this)"
+                    onmouseout="restoreImage2(this)"
+                    data-original-src="./image/product3_transparent.png"
+                    data-hover-src="./image/giftbox.png"
                   />
-                  <span class="product_name">Product Name</span>
+                  <span class="product_name">FRESH COTTON</span>
                   <p class="product_description d-none d-sm-block">
-                    Description
+                    Clean and refreshing scent. It is one of the more trendy
+                    scents at the moment.
                   </p>
                   <span class="product_volume">100ML</span>
-                  <button type="button" class="button">View More</button>
+                  <a href="./product3_Detail.html"
+                    ><button type="button" class="btn btn-dark button">
+                      View More
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
@@ -176,13 +204,21 @@
         </div>
       </div>
 
-      <h5 class="mx-auto">Discover the Magic</h5>
-      <a href="Seasonal.html"
-        ><span class="mx-auto"><u>SHOP CHRISTMAS</u></span></a
-      >
-      <div class="row P-0">
-        <div class="col-10 mx-auto">
-          <img class="slide-img" src="./image/slideshow-1.jpg" />
+      <div class="row justify-content-center p-0 my-5">
+        <div
+          class="col-12 col-md-5"
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <h5 class="mx-auto">DISCOVER THE MAGIC OF THE SEASON</h5>
+          <img class="sm-img-container" src="./image/seasonal_giftbox.png" />
+          <a href="./Seasonal.html">Shop the Collection</a>
+        </div>
+        <div class="col-5 d-none d-md-block">
+          <a href="./Seasonal.html"
+            ><img
+              class="img-container mb-0"
+              src="./image/christmas-cracker-packaging-crop.jpg"
+          /></a>
         </div>
       </div>
 
@@ -231,6 +267,7 @@
         </div>
       </div>
     </div>
+
     <div id="footer">
       <div class="outerBox">
         <hr />
