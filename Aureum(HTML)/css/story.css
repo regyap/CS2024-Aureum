@@ -13,6 +13,7 @@
   /* filter:contrast(60%);
   color:black; */
 }
+
 .storybanner article {
   width: 70%;
   /* padding-top: 25rem; */
@@ -33,28 +34,21 @@ a {
 }
 .inspiSection {
   width: 80%;
-  text-align: left;
   display: flex;
   align-items: flex-end;
 }
 .inspiSection img {
   flex: 1;
 }
-.inspiTextO {
-  flex: 1;
-  padding: 0rem 1rem 1rem 2rem;
-  /* min-width: 300px; */
-}
-.inspiTextE {
-  flex: 1;
-  padding: 0rem 2rem 1rem 1rem;
-  /* width: 300px; */
-}
 
 .phliosophy{
   background-color: black;
   color: white;
   padding: 7rem 0;
+}
+.text1{
+  font-size: 14px;
+  letter-spacing: 5px;
 }
 
 /*  */
@@ -83,8 +77,7 @@ a {
     overflow: hidden;
     position: relative;
   }
-  .inspiTextO,
-  .inspiTextE {
+  .inspiText {
     padding: 0rem;
     min-width: 250px;
     width: 80%;
@@ -125,8 +118,7 @@ a {
     position: relative;
   }
 
-  .inspiTextO,
-  .inspiTextE {
+  .inspiText {
     padding: 0rem;
     order: 2;
     width: 80%;
