@@ -1,12 +1,12 @@
 .storybanner {
-  /* background-image: url("../image/Story_Banner.png"); */
-  /* background-color: #cccccc; */
-  /* height: 60px; */
+  background-image: url("../image/Story_Nefertum\ Fragrances\ Banner.png");
+  background-color: #cccccc;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* color: white; */
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   color:black; */
 }
 .storybanner article {
-  width: 45%;
+  width: 70%;
   /* padding-top: 25rem; */
 }
 
