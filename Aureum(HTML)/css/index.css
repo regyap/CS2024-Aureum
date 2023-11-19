@@ -54,6 +54,17 @@
   transition: filter 0.3s ease-in-out;
 }
 
+.img-container-seasonal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  filter: brightness(1);
+  transition: filter 0.3s ease-in-out;
+}
+
 .index-content .sm-img-container {
   width: 50%;
   height: 100%;
