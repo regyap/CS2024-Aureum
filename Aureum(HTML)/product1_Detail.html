@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Detail</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/product1_Detail.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JHXFX1WK3L');
+    </script>
+  </head>
+  <script>
+    function triggerInput() {
+      const input = document.getElementById("textInput");
+      const enteredValue = input.value;
+      const bottleText = document.getElementById("bottleText");
+      bottleText.innerHTML = enteredValue.toUpperCase();
+    }
+
+    function openDescriptionTab() {
+      document.getElementById("descriptionTab").style.display = "block";
+      document.getElementById("notesTab").style.display = "none";
+      document.getElementById("compositionTab").style.display = "none";
+    }
+    function openNotesTab() {
+      document.getElementById("notesTab").style.display = "block";
+      document.getElementById("descriptionTab").style.display = "none";
+      document.getElementById("compositionTab").style.display = "none";
+    }
+    function openCompositionTab() {
+      document.getElementById("compositionTab").style.display = "block";
+      document.getElementById("notesTab").style.display = "none";
+      document.getElementById("descriptionTab").style.display = "none";
+    }
+  </script>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./image/logo_black.png" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gifting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our World</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="./Login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="./login.html" class="nav-item d-none d-lg-block"
+          ><img src="./image/profile.svg" class="profile-logo"
+        /></a>
+      </div>
+    </nav>
+
+    <div id="customisationSection" class="position-relative p-0">
+      <div class="row d-flex justify-content-center gap-2">
+        <div class="col d-grid gap-3 leftCol">
+          <div id="productImage">
+            <img src="image/product3_transparent.png" alt="Product Image" />
+          </div>
+        </div>
+        <div class="col d-grid gap-0 rightCol">
+          <div class="row justify-content-start productName">CHERRY CLOUD</div>
+          <div class="row justify-content-start desc">Gentle Luxury</div>
+          <div class="row justify-content-start desc">$54.99</div>
+          <div class="row justify-content-start selectLabel">Select a size</div>
+          <div class="row justify-content-start">
+            <form>
+              <div class="row">
+                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+                <div class="col">
+                  <div key="inline-radio" class="mb-3 selectButtons">
+                    <input
+                      type="radio"
+                      id="inline-radio-1 radioSelection"
+                      name="bottleSize"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="inline-radio-1 radioSelection"
+                    >
+                      3.4 oz, 100ml
+                    </label>
+                  </div>
+                </div>
+                <!-- ))} -->
+                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+                <div class="col">
+                  <div key="inline-radio" class="mb-3 selectButtons">
+                    <input
+                      type="radio"
+                      id="inline-radio-2 radioSelection"
+                      name="bottleSize"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="inline-radio-2 radioSelection"
+                    >
+                      1.05z, 30ml
+                    </label>
+                  </div>
+                </div>
+                <!-- ))} -->
+                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+                <div class="col">
+                  <div key="inline-radio" class="mb-3 selectButtons">
+                    <input
+                      type="radio"
+                      id="inline-radio-3 radioSelection"
+                      name="bottleSize"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="inline-radio-3 radioSelection"
+                    >
+                      0.3oz, 10ml
+                    </label>
+                  </div>
+                </div>
+                <!-- ))} -->
+              </div>
+            </form>
+          </div>
+          <div class="row justify-content-end">
+            <button
+              class="btn btn-link addCustomButton"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#customisePopup"
+              style="width: 160px; height: 30px"
+            >
+              Add Customization
+            </button>
+          </div>
+          <div class="row justify-content-start">
+            <button
+              class="btn btn-dark button"
+              type="button"
+              style="width: 160px; height: 30px"
+            >
+              ADD TO BAG
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="customisePopup"
+        class="modal"
+        tabindex="-1"
+        role="dialog"
+        style="display: none"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">
+                <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row gap-2 popupContent">
+                <div class="col d-grid gap-3 position-relative p-0">
+                  <div id="popup_productImage">
+                    <div class="overlay-text">
+                      <p id="bottleText" class="text-black"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col gap-4 popupRightCol">
+                  <div class="row justify-content-center">
+                    Your bespoke perfume awaits, a reflection of your style,
+                    grace, and the essence of your extraordinary self.
+                  </div>
+                  <div class="row justify-content-center">
+                    <hr />
+                  </div>
+                  <div class="row justify-content-center">
+                    <form>
+                      <input
+                        id="textInput"
+                        type="text"
+                        placeholder="Enter name or phrase"
+                        oninput="triggerInput();"
+                      />
+                    </form>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button
+                      class="btn btn-dark button"
+                      type="button"
+                      style="width: 160px; height: 30px"
+                    >
+                      SAVE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="descTabsSection">
+      <ul class="nav nav-underline tabHeaders">
+        <li class="nav-item">
+          <a
+            href="#description"
+            class="nav-link"
+            aria-current="page"
+            onclick="openDescriptionTab()"
+            >DESCRIPTION</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#composition" class="nav-link" onclick="openCompositionTab()"
+            >COMPOSITION</a
+          >
+        </li>
+      </ul>
+
+      <div id="descriptionTab">
+        <div class="row gap-5 descContent">
+          <div class="col">
+            <div class="row">
+              <p>CHERRY CLOUD: A Fragrant Elegance Embodied</p>
+            </div>
+            <div class="row">
+              <p>
+                Step into the celestial embrace of "Cherry Cloud," an opulent
+                elixir that transcends the ordinary, inviting you on a sensorial
+                journey that melds sophistication with sheer indulgence. This
+                enchanting fragrance is a tapestry woven with the finest
+                essences, creating an olfactory symphony that dances delicately
+                on the skin, leaving an ethereal trail of allure and refinement.
+              </p>
+              <p>
+                At its inception, the captivating allure of Cassia delicately
+                graces the senses, unveiling a mesmerizing prelude that entices
+                the palate of the olfactory. This top note introduces an air of
+                warmth and intrigue, setting the stage for the lavish tale that
+                unfolds.
+              </p>
+              <p>
+                As the scent story evolves, the heart blooms with the delicate
+                petals of Cherry Blossom. Here, nature's elegance is captured in
+                its purest form, painting a picture of grace and beauty. This
+                floral symphony adds an ethereal softness, lending an aura of
+                romance and tenderness to the composition.
+              </p>
+              <p>
+                The base notes, anchored by the timeless White Musk, bring depth
+                and sophistication to this olfactory masterpiece. This
+                foundation harmonizes effortlessly with the skin, leaving a
+                lingering trail of sheer opulence that captivates and entrances.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="productImage">
+              <img src="image/product3_desc_img.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="notesTab" style="display: none">
+        <b>TOP:</b> Cassia <br />
+        <b>MIDDLE:</b> Cherry Blossom <br />
+        <b>BASE:</b> White Musk <br />
+      </div>
+      <div id="compositionTab" style="display: none">
+        <b>INGREDIENTS: </b>Ethanol, Fragrance, Deionized water, Glycerin,
+        Oolong Tea leaves
+      </div>
+    </div>
+    <!------------------------------ ELEMENTS SECTION ------------------------------>
+    <div id="elements" class="row d-flex justify-content-center">
+      <div class="col">
+        <div class="row">
+          <div class="elementImage">
+            <img src="image/product_element_cassia.png" />
+          </div>
+        </div>
+        <div class="row">
+          <p class="elementName">CASSIA</p>
+        </div>
+        <div class="row">
+          <p>
+            Cassia reigns as the enigmatic trailblazer. Its presence evokes
+            warmth, infusing a composition with an enticing aura reminiscent of
+            cinnamon's allure. Cassia, with its spicy and subtly sweet essence,
+            acts as the herald, introducing a fragrance with an intriguing,
+            comforting embrace.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="elementImage">
+            <img src="image/product_element_cherryblossom.png" />
+          </div>
+        </div>
+        <div class="row">
+          <p class="elementName">CHERRY BLOSSOM</p>
+        </div>
+        <div class="row">
+          <p>
+            The ethereal beauty of Cherry Blossom transcends mere scent,
+            infusing perfumes with an exquisite floral delicacy. Its presence is
+            akin to a soft whisper of spring, evoking a sense of tender
+            serenity. The delicate petals of Cherry Blossom impart a romantic
+            aura, painting a picture of grace and evoking a poetic charm that
+            lingers in the heart.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="elementImage">
+            <img src="image/product_element_whitemusk.png" />
+          </div>
+        </div>
+        <div class="row">
+          <p class="elementName">WHITE MUSK</p>
+        </div>
+        <div class="row">
+          <p>
+            The timeless cornerstone of perfumery, bestows an unparalleled depth
+            and allure. It possesses an almost mystical quality, seamlessly
+            merging with one's skin to create an intimate, skin-like scent. Its
+            subtle, powdery softness adds sophistication and sensuality, leaving
+            an enduring trail of sheer elegance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="extra" class="col">
+      <div class="row row1">
+        <div class="col">
+          <div class="extraImage">
+            <img src="image/product1_notes_img1.png" />
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <p>
+            Crafted with the highest quality ingredients, including ethanol,
+            fragrance, deionized water, glycerin, and the delicate essence of
+            Oolong Tea leaves, "Cherry Cloud" is not merely a scent
+          </p>
+        </div>
+      </div>
+      <div class="row row2">
+        <div class="col d-flex justify-content-center">
+          <p>
+            it's a testament to refinement and luxury. It's an aromatic
+            expression cherished by many, exuding confidence and allure,
+            transcending gender boundaries to become a captivating essence for
+            both men and women.
+          </p>
+        </div>
+        <div class="col">
+          <div class="extraImage">
+            <img src="image/product1_notes_img2.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="outerBox">
+        <hr />
+        <div class="content">
+          <div class="compDetails">
+            <span class="compName">AUREUM</span>
+            <span class="compAdd"
+              >High Perfumery from the land of Mexico, founded in 1989</span
+            >
+          </div>
+          <div>
+            <span>ABOUT US</span>
+            <a href="">Our Story</a>
+            <a href="">Our Philosophy</a>
+          </div>
+          <div>
+            <span>CLIENT SERVICES</span>
+            <a href="">Contact</a>
+            <a href="">Delivery and Returns</a>
+            <a href="">Olfactive Society</a>
+            <a href="">FAQs</a>
+            <a href="">Find a Boutique</a>
+          </div>
+          <div>
+            <span>LEGAL</span>
+            <a href="">Terms and Conditions</a>
+            <a href="">Privacy Policy</a>
+          </div>
+          <div>
+            <span>FOLLOW US</span>
+            <a href="">Intagram</a>
+            <a href="">Tiktok</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="logo">
+        <div>© Aureum 2023. All rights reserved.</div>
+        <div>
+          <img src="./image/logo_black.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

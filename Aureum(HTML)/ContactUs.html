@@ -7,53 +7,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- css -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Additional CSS -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-JHXFX1WK3L");
+    </script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./image/logo_black.png" class="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gifting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our World</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="./Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="./login.html" class="nav-item d-none d-lg-block"><img src="./image/profile.svg"
+                    class="profile-logo" /></a>
+        </div>
+    </nav>
+
+    <!-- content -->
     <section class="container">
         <h1>Contact Us</h1>
+        <p>Visit our showroom to smell and check out the range of products we carry.</p>
         <div class="flexbox">
             <div id="contactUs">
                 <h2>Customer Service</h2>
-                <h3>SG Office Address:</h3>
+                <h3>Office Address:</h3>
                 <p>
-                    Aureum 50 Nanyang Ave, <br />
-                    Floor B4, #2.2-B4.04 <br />
-                    Singapore 639798
+                    77 High Street #05-02, <br />
+                    High Street Plaza, <br />
+                    Singapore 179433
+                </p>
+                <h3>Showroom Address:</h3>
+                <p>
+                    <b>Flagship</b> <br>
+                    5 Upper Aljunied Link #06-05/06, <br />
+                    Singapore 367903
+                </p>
+                <p>
+                    <b>MLS</b> <br>
+                    1 Soon Lee Street #04-02, <br />
+                    Pioneer Centre, <br />
+                    Singapore 627605
+                </p>
+                <p>
+                    <b>Trendy Eyes</b> <br>
+                    445 Bedok North Street 1, <br />
+                    Djitsun Mall, <br />
+                    Singapore 469661
+                </p>
+                <p>
+                    <b>Tailor Couture</b> <br>
+                    55 South Bridge Rd #02-01, <br />
+                    Singapore 058686
                 </p>
                 <h3>Chat with Us</h3>
                 <p>
-                    Mon-Fri 8am to 10pm SGT <br />
-                    Sat-Sun 10am to 8pm SGT
-                </p>
-                <p>
-                    <a href="tel:+65 87654321">CHAT NOW</a>
+                    <a href="tel:+65 8333 8884">CHAT NOW</a>
                 </p>
             </div>
             <div id="contactForm">
                 <h2>Contact Form</h2>
+                Contact us via email <a href="mailto:Nefertum@outlook.sg">[here]</a> or simply fill out the form for any
+                inquiries.
                 <form action="#">
-                    <div class="m-5">
+                    <div class="m-1">
                         <label for="" class="">Full Name</label>
                         <input type="text" class="form-control" id="" placeholder="Your Full Name">
                     </div>
-                    <div class="m-5">
+                    <div class="m-1">
                         <label for="" class="">Email address</label>
                         <input type="email" class="form-control" id="" placeholder="Your Email">
                     </div>
-                    <div class="m-5">
+                    <div class="m-1">
                         <label for="" class="">Contact Number</label>
                         <input type="email" class="form-control" id="" placeholder="Your Contact Number">
                     </div>
-                    <div class="m-5">
-                        <label for="" class="">Example textarea</label>
+                    <div class="m-1">
+                        <label for="" class="">Message: </label>
                         <textarea class="form-control" id="" rows="3" placeholder="Enter Your Message"></textarea>
                     </div>
                     <div class="col-auto">
