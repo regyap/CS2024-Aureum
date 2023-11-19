@@ -1,249 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Login | Nefertum</title>
-    <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <script src="./js/login.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-JHXFX1WK3L");
-    </script>
-  </head>
+<head>
+  <title>Login | Nefertum</title>
+  <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+  <script src="./js/login.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./image/logo_black.png" class="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    gtag("config", "G-JHXFX1WK3L");
+  </script>
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gifting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Stores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our World</a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="./Login.html">Login</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./image/logo_black.png" class="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a href="./login.html" class="nav-item d-none d-lg-block"
-          ><img src="./image/profile.svg" class="profile-logo"
-        /></a>
-      </div>
-    </nav>
-
-    <div class="container-fluid page-container my-5">
-      <div class="col-10 col-lg-4 card-container p-3" id="login-section">
-        <div class="row mb-1">
-          <h2 class="page-title">Login</h2>
-        </div>
-
-        <input type="text" placeholder=" Username" class="mb-3" />
-        <input type="password" placeholder=" Password" />
-        <div class="mb-3 text-end">
-          <span><u>Forget Password</u></span>
-        </div>
-        <button type="button" class="button mb-3">Login</button>
-        <div
-          style="
-            margin: 10px 0;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <hr style="width: 40%; display: inline-block; margin: 0" />
-          <span style="margin: 0 10px">OR</span>
-          <hr style="width: 40%; display: inline-block; margin: 0" />
-        </div>
-        <p class="text-center">
-          Don't have an account?
-          <span class="clickable" id="toRegister">Create Here</span>
-        </p>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our World</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="./Login.html">Login</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="col-md-6 col-xs-10 card-container p-3" id="register-section">
-        <div class="row mb-1">
-          <h2 class="page-title">Register</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-8 mb-3">
-            <input type="text" placeholder="First Name" />
-          </div>
-          <div class="col-md-4 mb-3">
-            <input type="text" placeholder="Last Name" />
-          </div>
-        </div>
-        <input type="email" placeholder="Email" class="mb-3" />
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <input type="password" placeholder="Password" />
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="password" placeholder="Confirm Password" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <input
-              type="text"
-              id="textInput"
-              placeholder="Date of Birth"
-              onmouseover="showDateInput()"
-              onmouseout="showTextInput()"
-            />
-            <input
-              type="date"
-              id="dateInput"
-              onmouseover="showDateInput()"
-              onmouseout="showTextInput()"
-            />
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="tel" placeholder="Contact Number" />
-          </div>
-        </div>
-        <input type="text" placeholder="Address" class="mb-3" />
-        <div class="row mb-3">
-          <div class="col-2 col-md-1">
-            <input class="check_box" type="checkbox" name="terms-conditions" />
-          </div>
-          <div class="col-10 col-md-11 p-0" style="text-align: left">
-            <label class="conditions"
-              >I agree to the
-              <a href="./TnC.html" target="_blank" rel="noopener noreferrer"
-                >Terms and Conditions</a
-              ></label
-            >
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-2 col-md-1">
-            <input class="check_box" type="checkbox" name="privacy-policy" />
-          </div>
-          <div class="col-10 col-md-11 p-0" style="text-align: left">
-            <label class="conditions">
-              I agree to receive information by email about offers, services,
-              products, and events from Nefertum or other group companies, in
-              accordance with the Privacy Policy.
-            </label>
-          </div>
-        </div>
-        <button type="button" class="button">Register</button>
-        <div
-          style="
-            margin: 10px 0;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <hr style="width: 40%; display: inline-block; margin: 0" />
-          <span style="margin: 0 10px">OR</span>
-          <hr style="width: 40%; display: inline-block; margin: 0" />
-        </div>
-        <p class="text-center">
-          Already have an account?
-          <span class="clickable" id="toLogin">Login Here</span>
-        </p>
-      </div>
+      <a href="./login.html" class="nav-item d-none d-lg-block"><img src="./image/profile.svg"
+          class="profile-logo" /></a>
     </div>
-    <div id="footer">
-      <div class="outerBox">
-        <hr />
-        <div class="content">
-          <div class="compDetails">
-            <span class="compName">AUREUM</span>
-            <span class="compAdd"
-              >High Perfumery from the land of Mexico, founded in 1989</span
-            >
-          </div>
-          <div>
-            <span>ABOUT US</span>
-            <a href="">Our Story</a>
-            <a href="">Our Philosophy</a>
-          </div>
-          <div>
-            <span>CLIENT SERVICES</span>
-            <a href="">Contact</a>
-            <a href="">Delivery and Returns</a>
-            <a href="">Olfactive Society</a>
-            <a href="">FAQs</a>
-            <a href="">Find a Boutique</a>
-          </div>
-          <div>
-            <span>LEGAL</span>
-            <a href="">Terms and Conditions</a>
-            <a href="">Privacy Policy</a>
-          </div>
-          <div>
-            <span>FOLLOW US</span>
-            <a href="">Intagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-          </div>
-        </div>
-        <hr />
+  </nav>
+
+  <div class="container-fluid page-container my-5">
+    <div class="col-10 col-lg-4 card-container p-3" id="login-section">
+      <div class="row mb-1">
+        <h2 class="page-title">Login</h2>
       </div>
-      <div class="logo">
-        <div>© Aureum 2023. All rights reserved.</div>
+
+      <input type="text" placeholder=" Username" class="mb-3" />
+      <input type="password" placeholder=" Password" />
+      <div class="mb-3 text-end">
+        <span><u>Forget Password</u></span>
+      </div>
+      <button type="button" class="button mb-3">Login</button>
+      <div style="
+            margin: 10px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+        <hr style="width: 40%; display: inline-block; margin: 0" />
+        <span style="margin: 0 10px">OR</span>
+        <hr style="width: 40%; display: inline-block; margin: 0" />
+      </div>
+      <p class="text-center">
+        Don't have an account?
+        <span class="clickable" id="toRegister">Create Here</span>
+      </p>
+    </div>
+
+    <div class="col-md-6 col-xs-10 card-container p-3" id="register-section">
+      <div class="row mb-1">
+        <h2 class="page-title">Register</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mb-3">
+          <input type="text" placeholder="First Name" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <input type="text" placeholder="Last Name" />
+        </div>
+      </div>
+      <input type="email" placeholder="Email" class="mb-3" />
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="password" placeholder="Confirm Password" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" id="textInput" placeholder="Date of Birth" onmouseover="showDateInput()"
+            onmouseout="showTextInput()" />
+          <input type="date" id="dateInput" onmouseover="showDateInput()" onmouseout="showTextInput()" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="tel" placeholder="Contact Number" />
+        </div>
+      </div>
+      <input type="text" placeholder="Address" class="mb-3" />
+      <div class="row mb-3">
+        <div class="col-2 col-md-1">
+          <input class="check_box" type="checkbox" name="terms-conditions" />
+        </div>
+        <div class="col-10 col-md-11 p-0" style="text-align: left">
+          <label class="conditions">I agree to the
+            <a href="./TnC.html" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></label>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-2 col-md-1">
+          <input class="check_box" type="checkbox" name="privacy-policy" />
+        </div>
+        <div class="col-10 col-md-11 p-0" style="text-align: left">
+          <label class="conditions">
+            I agree to receive information by email about offers, services,
+            products, and events from Nefertum or other group companies, in
+            accordance with the Privacy Policy.
+          </label>
+        </div>
+      </div>
+      <button type="button" class="button">Register</button>
+      <div style="
+            margin: 10px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+        <hr style="width: 40%; display: inline-block; margin: 0" />
+        <span style="margin: 0 10px">OR</span>
+        <hr style="width: 40%; display: inline-block; margin: 0" />
+      </div>
+      <p class="text-center">
+        Already have an account?
+        <span class="clickable" id="toLogin">Login Here</span>
+      </p>
+    </div>
+  </div>
+  <div id='footer'>
+    <div class='outerBox'>
+      <hr />
+      <div class='content'>
+
+        <div class='compDetails'>
+          <span class='compName'>Nefertum Fragrances</span>
+          <span class='compAdd'>
+            We craft enduring fragrances rich in base notes for lasting allure.
+          </span>
+        </div>
         <div>
-          <img src="./image/logo_black.png" />
+          <span>ABOUT US</span>
+          <a href="./story.html">Our Story</a>
+          <a href="./philosophy.html">Our Philosophy</a>
+        </div>
+        <div>
+          <span>CLIENT SERVICES</span>
+          <a href="./ContactUs.html">Contact</a>
+          <a href="./FAQ.html">Delivery and Returns</a>
+          <a href="./Perks.html">Olfactive Society</a>
+          <a href="./FAQ.html">FAQs</a>
+          <a href="./findaboutique.html">Find a Boutique</a>
+        </div>
+        <div>
+          <span>LEGAL</span>
+          <a href="./TnC.html">Terms and Conditions</a>
+          <a href="./privacyPolicy.html">Privacy Policy</a>
+        </div>
+        <div>
+          <span>FOLLOW US</span>
+          <a href="https://www.instagram.com/nefertumsg/">Intagram</a>
+          <a href="https://www.tiktok.com/@nefertumsg">Tiktok</a>
+          <a href="https://www.facebook.com/nefertumofficialstore">Facebook</a>
         </div>
       </div>
+      <hr />
     </div>
-  </body>
+    <div class='logo'>
+      <div>
+        © Nefertum Fragrances 2023. All rights reserved.
+      </div>
+      <div>
+        <img src="./image/Nefertum Fragrances Logo - black ver.png" alt="Nefertum Fragrances Logo in black version" />
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -1,254 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Product Detail</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/product3_Detail.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-JHXFX1WK3L');
-    </script>
-  </head>
+<head>
+  <title>Product Detail</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/product3_Detail.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
   <script>
-    function triggerInput() {
-      const input = document.getElementById("textInput");
-      const enteredValue = input.value;
-      const bottleText = document.getElementById("bottleText");
-      bottleText.innerHTML = enteredValue.toUpperCase();
-    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    function openDescriptionTab() {
-      document.getElementById("descriptionTab").style.display = "block";
-      document.getElementById("notesTab").style.display = "none";
-      document.getElementById("compositionTab").style.display = "none";
-    }
-    function openNotesTab() {
-      document.getElementById("notesTab").style.display = "block";
-      document.getElementById("descriptionTab").style.display = "none";
-      document.getElementById("compositionTab").style.display = "none";
-    }
-    function openCompositionTab() {
-      document.getElementById("compositionTab").style.display = "block";
-      document.getElementById("notesTab").style.display = "none";
-      document.getElementById("descriptionTab").style.display = "none";
-    }
+    gtag('config', 'G-JHXFX1WK3L');
   </script>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./image/logo_black.png" class="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+</head>
+<script>
+  function triggerInput() {
+    const input = document.getElementById("textInput");
+    const enteredValue = input.value;
+    const bottleText = document.getElementById("bottleText");
+    bottleText.innerHTML = enteredValue.toUpperCase();
+  }
 
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gifting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Stores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our World</a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="./Login.html">Login</a>
-            </li>
-          </ul>
-        </div>
+  function openDescriptionTab() {
+    document.getElementById("descriptionTab").style.display = "block";
+    document.getElementById("notesTab").style.display = "none";
+    document.getElementById("compositionTab").style.display = "none";
+  }
+  function openNotesTab() {
+    document.getElementById("notesTab").style.display = "block";
+    document.getElementById("descriptionTab").style.display = "none";
+    document.getElementById("compositionTab").style.display = "none";
+  }
+  function openCompositionTab() {
+    document.getElementById("compositionTab").style.display = "block";
+    document.getElementById("notesTab").style.display = "none";
+    document.getElementById("descriptionTab").style.display = "none";
+  }
+</script>
 
-        <a href="./login.html" class="nav-item d-none d-lg-block"
-          ><img src="./image/profile.svg" class="profile-logo"
-        /></a>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./image/logo_black.png" class="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our World</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="./Login.html">Login</a>
+          </li>
+        </ul>
       </div>
-    </nav>
 
-    <div id="customisationSection" class="position-relative p-0">
-      <div class="row d-flex justify-content-center gap-2">
-        <div class="col d-grid gap-3 leftCol">
-          <div id="productImage">
-            <img src="image/product3_transparent.png" alt="Product Image" />
-          </div>
+      <a href="./login.html" class="nav-item d-none d-lg-block"><img src="./image/profile.svg"
+          class="profile-logo" /></a>
+    </div>
+  </nav>
+
+  <div id="customisationSection" class="position-relative p-0">
+    <div class="row d-flex justify-content-center gap-2">
+      <div class="col d-grid gap-3 leftCol">
+        <div id="productImage">
+          <img src="image/product3_transparent.png" alt="Product Image" />
         </div>
-        <div class="col d-grid gap-0 rightCol">
-          <div class="row justify-content-start productName">
-            FRESH COTTON
-          </div>
-          <div class="row justify-content-start desc">Clean & Fresh</div>
-          <div class="row justify-content-start desc">$49.99</div>
-          <div class="row justify-content-start selectLabel">Select a size</div>
-          <div class="row justify-content-start">
-            <form>
-              <div class="row">
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-1 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-1 radioSelection"
-                    >
-                      3.4 oz, 100ml
-                    </label>
-                  </div>
+      </div>
+      <div class="col d-grid gap-0 rightCol">
+        <div class="row justify-content-start productName">
+          FRESH COTTON
+        </div>
+        <div class="row justify-content-start desc">Clean & Fresh</div>
+        <div class="row justify-content-start desc">$49.99</div>
+        <div class="row justify-content-start selectLabel">Select a size</div>
+        <div class="row justify-content-start">
+          <form>
+            <div class="row">
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-1 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-1 radioSelection">
+                    3.4 oz, 100ml
+                  </label>
                 </div>
-                <!-- ))} -->
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-2 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-2 radioSelection"
-                    >
-                      1.05z, 30ml
-                    </label>
-                  </div>
-                </div>
-                <!-- ))} -->
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-3 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-3 radioSelection"
-                    >
-                      0.3oz, 10ml
-                    </label>
-                  </div>
-                </div>
-                <!-- ))} -->
               </div>
-            </form>
-          </div>
-          <div class="row justify-content-end">
-            <button
-              class="btn btn-link addCustomButton"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#customisePopup"
-              style="width: 160px; height: 30px"
-            >
-              Add Customization
-            </button>
-          </div>
-          <div class="row justify-content-start">
-            <button
-              class="btn btn-dark button"
-              type="button"
-              style="width: 160px; height: 30px"
-            >
-              ADD TO BAG
-            </button>
-          </div>
+              <!-- ))} -->
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-2 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-2 radioSelection">
+                    1.05z, 30ml
+                  </label>
+                </div>
+              </div>
+              <!-- ))} -->
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-3 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-3 radioSelection">
+                    0.3oz, 10ml
+                  </label>
+                </div>
+              </div>
+              <!-- ))} -->
+            </div>
+          </form>
+        </div>
+        <div class="row justify-content-end">
+          <button class="btn btn-link addCustomButton" type="button" data-bs-toggle="modal"
+            data-bs-target="#customisePopup" style="width: 160px; height: 30px">
+            Add Customization
+          </button>
+        </div>
+        <div class="row justify-content-start">
+          <button class="btn btn-dark button" type="button" style="width: 160px; height: 30px">
+            ADD TO BAG
+          </button>
         </div>
       </div>
+    </div>
 
-      <div
-        id="customisePopup"
-        class="modal"
-        tabindex="-1"
-        role="dialog"
-        style="display: none"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">
-                <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="row gap-2 popupContent">
-                <div class="col d-grid gap-3 position-relative p-0">
-                  <div id="popup_productImage">
-                    <div class="overlay-text">
-                      <p id="bottleText" class="text-black"></p>
-                    </div>
+    <div id="customisePopup" class="modal" tabindex="-1" role="dialog" style="display: none">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gap-2 popupContent">
+              <div class="col d-grid gap-3 position-relative p-0">
+                <div id="popup_productImage">
+                  <div class="overlay-text">
+                    <p id="bottleText" class="text-black"></p>
                   </div>
                 </div>
-                <div class="col gap-4 popupRightCol">
-                  <div class="row justify-content-center">
-                    Your bespoke perfume awaits, a reflection of your style,
-                    grace, and the essence of your extraordinary self.
-                  </div>
-                  <div class="row justify-content-center">
-                    <hr />
-                  </div>
-                  <div class="row justify-content-center">
-                    <form>
-                      <input
-                        id="textInput"
-                        type="text"
-                        placeholder="Enter name or phrase"
-                        oninput="triggerInput();"
-                      />
-                    </form>
-                  </div>
-                  <div class="row justify-content-center">
-                    <button
-                      class="btn btn-dark button"
-                      type="button"
-                      style="width: 160px; height: 30px"
-                    >
-                      SAVE
-                    </button>
-                  </div>
+              </div>
+              <div class="col gap-4 popupRightCol">
+                <div class="row justify-content-center">
+                  Your bespoke perfume awaits, a reflection of your style,
+                  grace, and the essence of your extraordinary self.
+                </div>
+                <div class="row justify-content-center">
+                  <hr />
+                </div>
+                <div class="row justify-content-center">
+                  <form>
+                    <input id="textInput" type="text" placeholder="Enter name or phrase" oninput="triggerInput();" />
+                  </form>
+                </div>
+                <div class="row justify-content-center">
+                  <button class="btn btn-dark button" type="button" style="width: 160px; height: 30px">
+                    SAVE
+                  </button>
                 </div>
               </div>
             </div>
@@ -256,213 +188,212 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="descTabsSection">
-      <ul class="nav nav-underline tabHeaders">
-        <li class="nav-item">
-          <a
-            href="#description"
-            class="nav-link"
-            aria-current="page"
-            onclick="openDescriptionTab()"
-            >DESCRIPTION</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
-        </li>
-        <li class="nav-item">
-          <a href="#composition" class="nav-link" onclick="openCompositionTab()"
-            >COMPOSITION</a
-          >
-        </li>
-      </ul>
+  <div id="descTabsSection">
+    <ul class="nav nav-underline tabHeaders">
+      <li class="nav-item">
+        <a href="#description" class="nav-link" aria-current="page" onclick="openDescriptionTab()">DESCRIPTION</a>
+      </li>
+      <li class="nav-item">
+        <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
+      </li>
+      <li class="nav-item">
+        <a href="#composition" class="nav-link" onclick="openCompositionTab()">COMPOSITION</a>
+      </li>
+    </ul>
 
-      <div id="descriptionTab">
-        <div class="row gap-5 descContent">
-          <div class="col">
-            <div class="row">
-              <p>FRESH COTTON: Where Elegance Meets Comfort</p>
-            </div>
-            <div class="row">
-              <p>
-                Step into a world where sophistication intertwines seamlessly
-                with comfort - that's the essence of Fresh Cotton. Imagine the
-                first rays of dawn gently kissing your skin as you stroll
-                through a field of freshly laundered linens. This fragrance is a
-                manifestation of that serene morning embrace, capturing the
-                essence of pure elegance and tranquil comfort.
-              </p>
-              <p>
-                At the heart of Fresh Cotton lies a delicate blend meticulously
-                crafted to evoke an aura of pristine purity. The initial burst
-                of aroma takes you on an olfactory journey, where the
-                invigorating scent of citrus-infused alcohol dances playfully
-                with the subtle yet unmistakable fragrance of freshly laundered
-                linens. This symphony of notes unveils layers of complexity,
-                each revealing a facet of its captivating personality.
-              </p>
-              <p>
-                The subtle nuances of Citronella and Geraniol add a refreshing
-                zest, akin to a sun-kissed garden after a light summer rain.
-                These elements interlace seamlessly with the gentle allure of
-                a-Hexyl Cinnamic aldehyde and Alpha-iso-methylionone, creating
-                an ethereal fragrance that lingers delicately in the air.
-              </p>
-              <p>
-                As the fragrance settles, the comforting embrace of Linalool and
-                Eugenol emerges, reminiscent of a cozy afternoon wrapped in the
-                softest cotton blanket. It is here that Fresh Cotton truly
-                shines, offering a harmonious blend that is both unique and
-                reassuringly familiar.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="productImage">
-              <img src="image/product3_desc_img.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notesTab" style="display: none">
-        <b>TOP:</b> Orange, Cotton <br />
-        <b>MIDDLE:</b> Muguet, Violet <br />
-        <b>BASE:</b> Cedarwood, Amber, Musk <br />
-      </div>
-      <div id="compositionTab" style="display: none">
-        <b>INGREDIENTS: </b>Alcohol Denat, Fragrance, Citronella, Geraniol,
-        a-Hexyl Cinnamic aldehyde, Alpha-iso-methylionone, Linalool. Eugenol,
-        BHT
-      </div>
-    </div>
-    <!------------------------------ ELEMENTS SECTION ------------------------------>
-    <div id="elements" class="row d-flex justify-content-center">
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_orange.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">ORANGE</p>
-        </div>
-        <div class="row">
-          <p>
-            Orange exudes a lively burst of citrus vitality, akin to sun-kissed joy, infusing scents with vibrant freshness and an aura of optimism.
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_cotton.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">COTTON</p>
-        </div>
-        <div class="row">
-          <p>
-            Cotton whispers of pure comfort, evoking the tranquility of fresh laundry, offering a gentle, familiar embrace of serene cleanliness.
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_violet.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">VIOLET</p>
-        </div>
-        <div class="row">
-          <p>
-            Violet's delicate allure brings refined sophistication, akin to strolling through a misty garden, leaving an enigmatic and elegantly floral impression.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div id="extra" class="col">
-      <div class="row row1">
+    <div id="descriptionTab">
+      <div class="row gap-5 descContent">
         <div class="col">
-          <div class="extraImage">
-            <img src="image/product3_extra_1.png" />
+          <div class="row">
+            <p>FRESH COTTON: Where Elegance Meets Comfort</p>
           </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p>
-            Beyond its delightful aroma, Fresh Cotton exudes an undeniable sense
-            of modern elegance. It encapsulates the zeitgeist of contemporary
-            style, appealing to those with an affinity for the latest trends.
-            Its clean, fruity floral notes evoke a sense of understated luxury,
-            making it a statement piece for those who appreciate refinement.
-          </p>
-        </div>
-      </div>
-      <div class="row row2">
-        <div class="col d-flex justify-content-center">
-          <p>
-            Indulge in the allure of Fresh Cotton - a fragrance that not only
-            captivates the senses but also embodies a modern ode to comfort,
-            elegance, and the ever-evolving essence of style.
-          </p>
+          <div class="row">
+            <p>
+              Step into a world where sophistication intertwines seamlessly
+              with comfort - that's the essence of Fresh Cotton. Imagine the
+              first rays of dawn gently kissing your skin as you stroll
+              through a field of freshly laundered linens. This fragrance is a
+              manifestation of that serene morning embrace, capturing the
+              essence of pure elegance and tranquil comfort.
+            </p>
+            <p>
+              At the heart of Fresh Cotton lies a delicate blend meticulously
+              crafted to evoke an aura of pristine purity. The initial burst
+              of aroma takes you on an olfactory journey, where the
+              invigorating scent of citrus-infused alcohol dances playfully
+              with the subtle yet unmistakable fragrance of freshly laundered
+              linens. This symphony of notes unveils layers of complexity,
+              each revealing a facet of its captivating personality.
+            </p>
+            <p>
+              The subtle nuances of Citronella and Geraniol add a refreshing
+              zest, akin to a sun-kissed garden after a light summer rain.
+              These elements interlace seamlessly with the gentle allure of
+              a-Hexyl Cinnamic aldehyde and Alpha-iso-methylionone, creating
+              an ethereal fragrance that lingers delicately in the air.
+            </p>
+            <p>
+              As the fragrance settles, the comforting embrace of Linalool and
+              Eugenol emerges, reminiscent of a cozy afternoon wrapped in the
+              softest cotton blanket. It is here that Fresh Cotton truly
+              shines, offering a harmonious blend that is both unique and
+              reassuringly familiar.
+            </p>
+          </div>
         </div>
         <div class="col">
-          <div class="extraImage">
-            <img src="image/product1_notes_img2.png" />
+          <div class="productImage">
+            <img src="image/product3_desc_img.png" />
           </div>
         </div>
       </div>
     </div>
 
-    <div id="footer">
-      <div class="outerBox">
-        <hr />
-        <div class="content">
-          <div class="compDetails">
-            <span class="compName">AUREUM</span>
-            <span class="compAdd"
-              >High Perfumery from the land of Mexico, founded in 1989</span
-            >
-          </div>
-          <div>
-            <span>ABOUT US</span>
-            <a href="">Our Story</a>
-            <a href="">Our Philosophy</a>
-          </div>
-          <div>
-            <span>CLIENT SERVICES</span>
-            <a href="">Contact</a>
-            <a href="">Delivery and Returns</a>
-            <a href="">Olfactive Society</a>
-            <a href="">FAQs</a>
-            <a href="">Find a Boutique</a>
-          </div>
-          <div>
-            <span>LEGAL</span>
-            <a href="">Terms and Conditions</a>
-            <a href="">Privacy Policy</a>
-          </div>
-          <div>
-            <span>FOLLOW US</span>
-            <a href="">Intagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-          </div>
+    <div id="notesTab" style="display: none">
+      <b>TOP:</b> Orange, Cotton <br />
+      <b>MIDDLE:</b> Muguet, Violet <br />
+      <b>BASE:</b> Cedarwood, Amber, Musk <br />
+    </div>
+    <div id="compositionTab" style="display: none">
+      <b>INGREDIENTS: </b>Alcohol Denat, Fragrance, Citronella, Geraniol,
+      a-Hexyl Cinnamic aldehyde, Alpha-iso-methylionone, Linalool. Eugenol,
+      BHT
+    </div>
+  </div>
+  <!------------------------------ ELEMENTS SECTION ------------------------------>
+  <div id="elements" class="row d-flex justify-content-center">
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_orange.png" />
         </div>
-        <hr />
       </div>
-      <div class="logo">
-        <div>© Aureum 2023. All rights reserved.</div>
+      <div class="row">
+        <p class="elementName">ORANGE</p>
+      </div>
+      <div class="row">
+        <p>
+          Orange exudes a lively burst of citrus vitality, akin to sun-kissed joy, infusing scents with vibrant
+          freshness and an aura of optimism.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_cotton.png" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="elementName">COTTON</p>
+      </div>
+      <div class="row">
+        <p>
+          Cotton whispers of pure comfort, evoking the tranquility of fresh laundry, offering a gentle, familiar embrace
+          of serene cleanliness.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_violet.png" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="elementName">VIOLET</p>
+      </div>
+      <div class="row">
+        <p>
+          Violet's delicate allure brings refined sophistication, akin to strolling through a misty garden, leaving an
+          enigmatic and elegantly floral impression.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="extra" class="col">
+    <div class="row row1">
+      <div class="col">
+        <div class="extraImage">
+          <img src="image/product3_extra_1.png" />
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <p>
+          Beyond its delightful aroma, Fresh Cotton exudes an undeniable sense
+          of modern elegance. It encapsulates the zeitgeist of contemporary
+          style, appealing to those with an affinity for the latest trends.
+          Its clean, fruity floral notes evoke a sense of understated luxury,
+          making it a statement piece for those who appreciate refinement.
+        </p>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col d-flex justify-content-center">
+        <p>
+          Indulge in the allure of Fresh Cotton - a fragrance that not only
+          captivates the senses but also embodies a modern ode to comfort,
+          elegance, and the ever-evolving essence of style.
+        </p>
+      </div>
+      <div class="col">
+        <div class="extraImage">
+          <img src="image/product1_notes_img2.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='footer'>
+    <div class='outerBox'>
+      <hr />
+      <div class='content'>
+
+        <div class='compDetails'>
+          <span class='compName'>Nefertum Fragrances</span>
+          <span class='compAdd'>
+            We craft enduring fragrances rich in base notes for lasting allure.
+          </span>
+        </div>
         <div>
-          <img src="./image/logo_black.png" />
+          <span>ABOUT US</span>
+          <a href="./story.html">Our Story</a>
+          <a href="./philosophy.html">Our Philosophy</a>
+        </div>
+        <div>
+          <span>CLIENT SERVICES</span>
+          <a href="./ContactUs.html">Contact</a>
+          <a href="./FAQ.html">Delivery and Returns</a>
+          <a href="./Perks.html">Olfactive Society</a>
+          <a href="./FAQ.html">FAQs</a>
+          <a href="./findaboutique.html">Find a Boutique</a>
+        </div>
+        <div>
+          <span>LEGAL</span>
+          <a href="./TnC.html">Terms and Conditions</a>
+          <a href="./privacyPolicy.html">Privacy Policy</a>
+        </div>
+        <div>
+          <span>FOLLOW US</span>
+          <a href="https://www.instagram.com/nefertumsg/">Intagram</a>
+          <a href="https://www.tiktok.com/@nefertumsg">Tiktok</a>
+          <a href="https://www.facebook.com/nefertumofficialstore">Facebook</a>
         </div>
       </div>
+      <hr />
     </div>
-  </body>
+    <div class='logo'>
+      <div>
+        © Nefertum Fragrances 2023. All rights reserved.
+      </div>
+      <div>
+        <img src="./image/Nefertum Fragrances Logo - black ver.png" alt="Nefertum Fragrances Logo in black version" />
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

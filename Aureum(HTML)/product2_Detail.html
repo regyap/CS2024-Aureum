@@ -1,252 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Product Detail</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/product3_Detail.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-JHXFX1WK3L');
-    </script>
-  </head>
+<head>
+  <title>Product Detail</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/product3_Detail.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
   <script>
-    function triggerInput() {
-      const input = document.getElementById("textInput");
-      const enteredValue = input.value;
-      const bottleText = document.getElementById("bottleText");
-      bottleText.innerHTML = enteredValue.toUpperCase();
-    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    function openDescriptionTab() {
-      document.getElementById("descriptionTab").style.display = "block";
-      document.getElementById("notesTab").style.display = "none";
-      document.getElementById("compositionTab").style.display = "none";
-    }
-    function openNotesTab() {
-      document.getElementById("notesTab").style.display = "block";
-      document.getElementById("descriptionTab").style.display = "none";
-      document.getElementById("compositionTab").style.display = "none";
-    }
-    function openCompositionTab() {
-      document.getElementById("compositionTab").style.display = "block";
-      document.getElementById("notesTab").style.display = "none";
-      document.getElementById("descriptionTab").style.display = "none";
-    }
+    gtag('config', 'G-JHXFX1WK3L');
   </script>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./image/logo_black.png" class="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+</head>
+<script>
+  function triggerInput() {
+    const input = document.getElementById("textInput");
+    const enteredValue = input.value;
+    const bottleText = document.getElementById("bottleText");
+    bottleText.innerHTML = enteredValue.toUpperCase();
+  }
 
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gifting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Stores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our World</a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="./Login.html">Login</a>
-            </li>
-          </ul>
-        </div>
+  function openDescriptionTab() {
+    document.getElementById("descriptionTab").style.display = "block";
+    document.getElementById("notesTab").style.display = "none";
+    document.getElementById("compositionTab").style.display = "none";
+  }
+  function openNotesTab() {
+    document.getElementById("notesTab").style.display = "block";
+    document.getElementById("descriptionTab").style.display = "none";
+    document.getElementById("compositionTab").style.display = "none";
+  }
+  function openCompositionTab() {
+    document.getElementById("compositionTab").style.display = "block";
+    document.getElementById("notesTab").style.display = "none";
+    document.getElementById("descriptionTab").style.display = "none";
+  }
+</script>
 
-        <a href="./login.html" class="nav-item d-none d-lg-block"
-          ><img src="./image/profile.svg" class="profile-logo"
-        /></a>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./image/logo_black.png" class="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Fragrances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our World</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="./Login.html">Login</a>
+          </li>
+        </ul>
       </div>
-    </nav>
 
-    <div id="customisationSection" class="position-relative p-0">
-      <div class="row d-flex justify-content-center gap-2">
-        <div class="col d-grid gap-3 leftCol">
-          <div id="productImage">
-            <img src="image/product3_transparent.png" alt="Product Image" />
-          </div>
+      <a href="./login.html" class="nav-item d-none d-lg-block"><img src="./image/profile.svg"
+          class="profile-logo" /></a>
+    </div>
+  </nav>
+
+  <div id="customisationSection" class="position-relative p-0">
+    <div class="row d-flex justify-content-center gap-2">
+      <div class="col d-grid gap-3 leftCol">
+        <div id="productImage">
+          <img src="image/product3_transparent.png" alt="Product Image" />
         </div>
-        <div class="col d-grid gap-0 rightCol">
-          <div class="row justify-content-start productName">PEAR & TONKA</div>
-          <div class="row justify-content-start desc">Sweet & Feminine</div>
-          <div class="row justify-content-start desc">$49.99</div>
-          <div class="row justify-content-start selectLabel">Select a size</div>
-          <div class="row justify-content-start">
-            <form>
-              <div class="row">
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-1 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-1 radioSelection"
-                    >
-                      3.4 oz, 100ml
-                    </label>
-                  </div>
+      </div>
+      <div class="col d-grid gap-0 rightCol">
+        <div class="row justify-content-start productName">PEAR & TONKA</div>
+        <div class="row justify-content-start desc">Sweet & Feminine</div>
+        <div class="row justify-content-start desc">$49.99</div>
+        <div class="row justify-content-start selectLabel">Select a size</div>
+        <div class="row justify-content-start">
+          <form>
+            <div class="row">
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-1 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-1 radioSelection">
+                    3.4 oz, 100ml
+                  </label>
                 </div>
-                <!-- ))} -->
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-2 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-2 radioSelection"
-                    >
-                      1.05z, 30ml
-                    </label>
-                  </div>
-                </div>
-                <!-- ))} -->
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-3 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-3 radioSelection"
-                    >
-                      0.3oz, 10ml
-                    </label>
-                  </div>
-                </div>
-                <!-- ))} -->
               </div>
-            </form>
-          </div>
-          <div class="row justify-content-end">
-            <button
-              class="btn btn-link addCustomButton"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#customisePopup"
-              style="width: 160px; height: 30px"
-            >
-              Add Customization
-            </button>
-          </div>
-          <div class="row justify-content-start">
-            <button
-              class="btn btn-dark button"
-              type="button"
-              style="width: 160px; height: 30px"
-            >
-              ADD TO BAG
-            </button>
-          </div>
+              <!-- ))} -->
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-2 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-2 radioSelection">
+                    1.05z, 30ml
+                  </label>
+                </div>
+              </div>
+              <!-- ))} -->
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-3 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-3 radioSelection">
+                    0.3oz, 10ml
+                  </label>
+                </div>
+              </div>
+              <!-- ))} -->
+            </div>
+          </form>
+        </div>
+        <div class="row justify-content-end">
+          <button class="btn btn-link addCustomButton" type="button" data-bs-toggle="modal"
+            data-bs-target="#customisePopup" style="width: 160px; height: 30px">
+            Add Customization
+          </button>
+        </div>
+        <div class="row justify-content-start">
+          <button class="btn btn-dark button" type="button" style="width: 160px; height: 30px">
+            ADD TO BAG
+          </button>
         </div>
       </div>
+    </div>
 
-      <div
-        id="customisePopup"
-        class="modal"
-        tabindex="-1"
-        role="dialog"
-        style="display: none"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">
-                <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="row gap-2 popupContent">
-                <div class="col d-grid gap-3 position-relative p-0">
-                  <div id="popup_productImage">
-                    <div class="overlay-text">
-                      <p id="bottleText" class="text-black"></p>
-                    </div>
+    <div id="customisePopup" class="modal" tabindex="-1" role="dialog" style="display: none">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gap-2 popupContent">
+              <div class="col d-grid gap-3 position-relative p-0">
+                <div id="popup_productImage">
+                  <div class="overlay-text">
+                    <p id="bottleText" class="text-black"></p>
                   </div>
                 </div>
-                <div class="col gap-4 popupRightCol">
-                  <div class="row justify-content-center">
-                    Your bespoke perfume awaits, a reflection of your style,
-                    grace, and the essence of your extraordinary self.
-                  </div>
-                  <div class="row justify-content-center">
-                    <hr />
-                  </div>
-                  <div class="row justify-content-center">
-                    <form>
-                      <input
-                        id="textInput"
-                        type="text"
-                        placeholder="Enter name or phrase"
-                        oninput="triggerInput();"
-                      />
-                    </form>
-                  </div>
-                  <div class="row justify-content-center">
-                    <button
-                      class="btn btn-dark button"
-                      type="button"
-                      style="width: 160px; height: 30px"
-                    >
-                      SAVE
-                    </button>
-                  </div>
+              </div>
+              <div class="col gap-4 popupRightCol">
+                <div class="row justify-content-center">
+                  Your bespoke perfume awaits, a reflection of your style,
+                  grace, and the essence of your extraordinary self.
+                </div>
+                <div class="row justify-content-center">
+                  <hr />
+                </div>
+                <div class="row justify-content-center">
+                  <form>
+                    <input id="textInput" type="text" placeholder="Enter name or phrase" oninput="triggerInput();" />
+                  </form>
+                </div>
+                <div class="row justify-content-center">
+                  <button class="btn btn-dark button" type="button" style="width: 160px; height: 30px">
+                    SAVE
+                  </button>
                 </div>
               </div>
             </div>
@@ -254,225 +186,221 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="descTabsSection">
-      <ul class="nav nav-underline tabHeaders">
-        <li class="nav-item">
-          <a
-            href="#description"
-            class="nav-link"
-            aria-current="page"
-            onclick="openDescriptionTab()"
-            >DESCRIPTION</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
-        </li>
-        <li class="nav-item">
-          <a href="#composition" class="nav-link" onclick="openCompositionTab()"
-            >COMPOSITION</a
-          >
-        </li>
-      </ul>
+  <div id="descTabsSection">
+    <ul class="nav nav-underline tabHeaders">
+      <li class="nav-item">
+        <a href="#description" class="nav-link" aria-current="page" onclick="openDescriptionTab()">DESCRIPTION</a>
+      </li>
+      <li class="nav-item">
+        <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
+      </li>
+      <li class="nav-item">
+        <a href="#composition" class="nav-link" onclick="openCompositionTab()">COMPOSITION</a>
+      </li>
+    </ul>
 
-      <div id="descriptionTab">
-        <div class="row gap-5 descContent">
-          <div class="col">
-            <div class="row">
-              <p>PEAR & TONKA: A Symphony of Elegance and Joy</p>
-            </div>
-            <div class="row">
-              <p>
-                Within the opulent confines of "PEAR & TONKA" resides a
-                harmonious symphony that speaks volumes in every olfactory note.
-                At its inception, the lively dance between succulent Pears and
-                the enigmatic allure of Blackcurrant sets the stage. The top
-                notes orchestrate a jubilant overture, a melodic prelude that
-                hints at the vibrancy within.
-              </p>
-              <p>
-                As this exquisite melody transitions to its heart, Violet takes
-                center stage, infusing the composition with an ethereal
-                elegance. Its presence, akin to a whisper of poetic romance,
-                weaves an intricate tapestry of floral nuances, evoking an aura
-                of timeless sophistication.
-              </p>
-              <p>
-                Yet, the true crescendo lies within the base notes. Here, Tonka
-                and Vanilla intertwine, creating a sumptuous embrace that
-                resonates deeply. Tonka's warm, nutty facets intertwine with the
-                creamy sweetness of Vanilla, crafting an enchanting denouement
-                that lingers as a memory, leaving an irresistible trail of
-                allure.
-              </p>
-              <p>
-                Composed for those who seek not just attention but an
-                unforgettable presence, "PEAR & TONKA" is a declaration of
-                unapologetic elegance. It's more than a fragrance; it's an ode
-                to the vivacious spirit and the unabashed celebration of life's
-                exuberance.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="productImage">
-              <img src="image/product3_desc_img.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notesTab" style="display: none">
-        <b>TOP:</b> Pear, Blackcurrant <br />
-        <b>MIDDLE:</b> Violet <br />
-        <b>BASE:</b> Tonka, Vanilla <br />
-      </div>
-      <div id="compositionTab" style="display: none">
-        <b>INGREDIENTS: </b>Alcohol Denat., fragrance, Citral, Coumarin,
-        Geraniol, Linalool, BHT
-      </div>
-    </div>
-    <!------------------------------ ELEMENTS SECTION ------------------------------>
-    <div id="elements" class="row d-flex justify-content-center">
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_violet.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">VIOLET</p>
-        </div>
-        <div class="row">
-          <p>
-            Embodying elegance and grace, violet brings a touch of ethereal
-            beauty to fragrances. Its floral and slightly powdery aroma carries
-            an air of sophistication, conjuring visions of lush, blooming
-            gardens. Violet introduces a charming and serene facet to scents,
-            intertwining a sense of nostalgia and romance, reminiscent of soft
-            petals carried by a gentle breeze.
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_pear.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">PEAR</p>
-        </div>
-        <div class="row">
-          <p>
-            Like a succulent treasure from an orchard, pear infuses fragrances
-            with a delicate, sweet nuance, evoking the sensation of biting into
-            a ripe, juicy fruit. Its crisp and refreshing aura adds a luscious,
-            fruity dimension that uplifts the entire scent profile, painting a
-            vivid imagery of orchards in full bloom and embracing the essence of
-            youthfulness and vitality.
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_blackcurrant.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">BLACKCURRANT</p>
-        </div>
-        <div class="row">
-          <p>
-            Exuding an enchanting allure, blackcurrant infuses scents with its
-            tantalizingly sweet and slightly tart profile. Its fruity and bold
-            character creates a magnetic presence, adding depth and complexity
-            to fragrances. Blackcurrant instills a sense of mystery and allure,
-            painting a picture of dusky orchards laden with ripe, enticing
-            berries, enhancing the overall allure of the composition.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div id="extra" class="col">
-      <div class="row row1">
+    <div id="descriptionTab">
+      <div class="row gap-5 descContent">
         <div class="col">
-          <div class="extraImage">
-            <img src="image/product1_notes_img1.png" />
+          <div class="row">
+            <p>PEAR & TONKA: A Symphony of Elegance and Joy</p>
           </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p>
-            With its bold yet refined demeanor, it captures the essence of joy
-            and happiness, allowing every wearer to exude confidence and
-            charisma effortlessly.
-          </p>
-        </div>
-      </div>
-      <div class="row row2">
-        <div class="col d-flex justify-content-center">
-          <p>
-            This Extrait De Parfum is not just a scent; it's an experience—a
-            luxurious indulgence that encapsulates the allure of grand entrances
-            and the subtlety of elegance, beckoning you to revel in its
-            enchanting embrace.
-          </p>
+          <div class="row">
+            <p>
+              Within the opulent confines of "PEAR & TONKA" resides a
+              harmonious symphony that speaks volumes in every olfactory note.
+              At its inception, the lively dance between succulent Pears and
+              the enigmatic allure of Blackcurrant sets the stage. The top
+              notes orchestrate a jubilant overture, a melodic prelude that
+              hints at the vibrancy within.
+            </p>
+            <p>
+              As this exquisite melody transitions to its heart, Violet takes
+              center stage, infusing the composition with an ethereal
+              elegance. Its presence, akin to a whisper of poetic romance,
+              weaves an intricate tapestry of floral nuances, evoking an aura
+              of timeless sophistication.
+            </p>
+            <p>
+              Yet, the true crescendo lies within the base notes. Here, Tonka
+              and Vanilla intertwine, creating a sumptuous embrace that
+              resonates deeply. Tonka's warm, nutty facets intertwine with the
+              creamy sweetness of Vanilla, crafting an enchanting denouement
+              that lingers as a memory, leaving an irresistible trail of
+              allure.
+            </p>
+            <p>
+              Composed for those who seek not just attention but an
+              unforgettable presence, "PEAR & TONKA" is a declaration of
+              unapologetic elegance. It's more than a fragrance; it's an ode
+              to the vivacious spirit and the unabashed celebration of life's
+              exuberance.
+            </p>
+          </div>
         </div>
         <div class="col">
-          <div class="extraImage">
-            <img src="image/product1_notes_img2.png" />
+          <div class="productImage">
+            <img src="image/product3_desc_img.png" />
           </div>
         </div>
       </div>
     </div>
 
-    <div id="footer">
-      <div class="outerBox">
-        <hr />
-        <div class="content">
-          <div class="compDetails">
-            <span class="compName">AUREUM</span>
-            <span class="compAdd"
-              >High Perfumery from the land of Mexico, founded in 1989</span
-            >
-          </div>
-          <div>
-            <span>ABOUT US</span>
-            <a href="">Our Story</a>
-            <a href="">Our Philosophy</a>
-          </div>
-          <div>
-            <span>CLIENT SERVICES</span>
-            <a href="">Contact</a>
-            <a href="">Delivery and Returns</a>
-            <a href="">Olfactive Society</a>
-            <a href="">FAQs</a>
-            <a href="">Find a Boutique</a>
-          </div>
-          <div>
-            <span>LEGAL</span>
-            <a href="">Terms and Conditions</a>
-            <a href="">Privacy Policy</a>
-          </div>
-          <div>
-            <span>FOLLOW US</span>
-            <a href="">Intagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-          </div>
+    <div id="notesTab" style="display: none">
+      <b>TOP:</b> Pear, Blackcurrant <br />
+      <b>MIDDLE:</b> Violet <br />
+      <b>BASE:</b> Tonka, Vanilla <br />
+    </div>
+    <div id="compositionTab" style="display: none">
+      <b>INGREDIENTS: </b>Alcohol Denat., fragrance, Citral, Coumarin,
+      Geraniol, Linalool, BHT
+    </div>
+  </div>
+  <!------------------------------ ELEMENTS SECTION ------------------------------>
+  <div id="elements" class="row d-flex justify-content-center">
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_violet.png" />
         </div>
-        <hr />
       </div>
-      <div class="logo">
-        <div>© Aureum 2023. All rights reserved.</div>
+      <div class="row">
+        <p class="elementName">VIOLET</p>
+      </div>
+      <div class="row">
+        <p>
+          Embodying elegance and grace, violet brings a touch of ethereal
+          beauty to fragrances. Its floral and slightly powdery aroma carries
+          an air of sophistication, conjuring visions of lush, blooming
+          gardens. Violet introduces a charming and serene facet to scents,
+          intertwining a sense of nostalgia and romance, reminiscent of soft
+          petals carried by a gentle breeze.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_pear.png" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="elementName">PEAR</p>
+      </div>
+      <div class="row">
+        <p>
+          Like a succulent treasure from an orchard, pear infuses fragrances
+          with a delicate, sweet nuance, evoking the sensation of biting into
+          a ripe, juicy fruit. Its crisp and refreshing aura adds a luscious,
+          fruity dimension that uplifts the entire scent profile, painting a
+          vivid imagery of orchards in full bloom and embracing the essence of
+          youthfulness and vitality.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_blackcurrant.png" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="elementName">BLACKCURRANT</p>
+      </div>
+      <div class="row">
+        <p>
+          Exuding an enchanting allure, blackcurrant infuses scents with its
+          tantalizingly sweet and slightly tart profile. Its fruity and bold
+          character creates a magnetic presence, adding depth and complexity
+          to fragrances. Blackcurrant instills a sense of mystery and allure,
+          painting a picture of dusky orchards laden with ripe, enticing
+          berries, enhancing the overall allure of the composition.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="extra" class="col">
+    <div class="row row1">
+      <div class="col">
+        <div class="extraImage">
+          <img src="image/product1_notes_img1.png" />
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <p>
+          With its bold yet refined demeanor, it captures the essence of joy
+          and happiness, allowing every wearer to exude confidence and
+          charisma effortlessly.
+        </p>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col d-flex justify-content-center">
+        <p>
+          This Extrait De Parfum is not just a scent; it's an experience—a
+          luxurious indulgence that encapsulates the allure of grand entrances
+          and the subtlety of elegance, beckoning you to revel in its
+          enchanting embrace.
+        </p>
+      </div>
+      <div class="col">
+        <div class="extraImage">
+          <img src="image/product1_notes_img2.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='footer'>
+    <div class='outerBox'>
+      <hr />
+      <div class='content'>
+
+        <div class='compDetails'>
+          <span class='compName'>Nefertum Fragrances</span>
+          <span class='compAdd'>
+            We craft enduring fragrances rich in base notes for lasting allure.
+          </span>
+        </div>
         <div>
-          <img src="./image/logo_black.png" />
+          <span>ABOUT US</span>
+          <a href="./story.html">Our Story</a>
+          <a href="./philosophy.html">Our Philosophy</a>
+        </div>
+        <div>
+          <span>CLIENT SERVICES</span>
+          <a href="./ContactUs.html">Contact</a>
+          <a href="./FAQ.html">Delivery and Returns</a>
+          <a href="./Perks.html">Olfactive Society</a>
+          <a href="./FAQ.html">FAQs</a>
+          <a href="./findaboutique.html">Find a Boutique</a>
+        </div>
+        <div>
+          <span>LEGAL</span>
+          <a href="./TnC.html">Terms and Conditions</a>
+          <a href="./privacyPolicy.html">Privacy Policy</a>
+        </div>
+        <div>
+          <span>FOLLOW US</span>
+          <a href="https://www.instagram.com/nefertumsg/">Intagram</a>
+          <a href="https://www.tiktok.com/@nefertumsg">Tiktok</a>
+          <a href="https://www.facebook.com/nefertumofficialstore">Facebook</a>
         </div>
       </div>
+      <hr />
     </div>
-  </body>
+    <div class='logo'>
+      <div>
+        © Nefertum Fragrances 2023. All rights reserved.
+      </div>
+      <div>
+        <img src="./image/Nefertum Fragrances Logo - black ver.png" alt="Nefertum Fragrances Logo in black version" />
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
