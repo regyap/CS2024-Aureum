@@ -21,6 +21,9 @@
 a {
   color: #fbcc97;
 }
+a:hover {
+  color: #eba14e;
+}
 
 /* --- section --- */
 .inspiration {
@@ -41,12 +44,12 @@ a {
   flex: 1;
 }
 
-.phliosophy{
+.phliosophy {
   background-color: black;
   color: white;
   padding: 7rem 0;
 }
-.text1{
+.text1 {
   font-size: 14px;
   letter-spacing: 5px;
 }
