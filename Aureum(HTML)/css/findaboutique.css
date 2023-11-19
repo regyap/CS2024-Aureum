@@ -69,10 +69,10 @@
     font-size: 15px;
 
     /* padding-right: 200px; */
-    height: 360px;
+    height: 400px;
 
     /* flex: 1; */
-    width: 610px;
+    width: 40%;
     max-width: calc(100% - 16px);
     margin-left: 0px;
     /* padding-right: 200px; */
