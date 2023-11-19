@@ -1,11 +1,11 @@
 @font-face {
     font-family: Montserrat;
-    src: url("../../font/Montserrat/Montserrat-VariableFont_wght.ttf");
+    src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: 'CormorantGaramond';
-    src: url("../../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
+    src: url("../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
 
 }
 
