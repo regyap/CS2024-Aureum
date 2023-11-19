@@ -1,12 +1,12 @@
 .storybanner {
-  /* background-image: url("../image/Story_Banner.png"); */
-  /* background-color: #cccccc; */
-  /* height: 60px; */
+  background-image: url("../image/Story_Nefertum\ Fragrances\ Banner.png");
+  background-color: #cccccc;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* color: white; */
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,8 +14,11 @@
   color:black; */
 }
 .storybanner article {
-  width: 45%;
+  width: 70%;
   /* padding-top: 25rem; */
+}
+a {
+  color: #fbcc97;
 }
 
 /* --- section --- */
@@ -39,21 +42,28 @@
 }
 .inspiTextO {
   flex: 1;
-  padding: 0rem 1rem 1rem 5rem;
+  padding: 0rem 1rem 1rem 2rem;
   /* min-width: 300px; */
 }
 .inspiTextE {
   flex: 1;
-  padding: 0rem 5rem 1rem 1rem;
+  padding: 0rem 2rem 1rem 1rem;
   /* width: 300px; */
+}
+
+.phliosophy{
+  background-color: black;
+  color: white;
+  padding: 7rem 0;
 }
 
 /*  */
 /* --- tablet --- */
-@media (min-width: 600px) and (max-width: 1000px) {
-  .storybanner {
-    /* width: 100vw; */
-  }
+@media (min-width: 600px) and (max-width: 1100px) {
+  /* .storybanner {
+    width: 750px;
+    padding: 0px;
+  } */
   .inspiration {
     display: flex;
     flex-direction: column;
@@ -62,7 +72,7 @@
   }
   .storybanner article {
     width: 50%;
-    padding-top: 15rem;
+    padding-top: 5rem;
   }
   .inspiSection {
     width: 80%;

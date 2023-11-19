@@ -5,6 +5,15 @@
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta Tags -->
+    <meta
+      name="description"
+      content="Limited Edition Seasonal Products by Nefertum."
+    />
+    <meta
+      name="keywords"
+      content="seasonal, limited time, christmas, gifts, perfume, fragrance shop"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap -->
     <link
@@ -21,6 +30,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/seasonal.css" />
+    <script src="./js/seasonal.js"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"
@@ -81,7 +91,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <div class="row p-0">
         <div class="col-12 p-0">
           <video class="vid-fluid-stretch" autoplay muted loop>
@@ -89,87 +99,185 @@
           </video>
         </div>
       </div>
-      <div class="row">
-        <h1>Christmas Wonderland</h1>
+      <div class="row my-5 px-3">
+        <h2>Christmas Wonderland</h2>
         <p class="text-center">
-          Ah, Halfeti - the jewel in Turkey's crown. With its wonderful mix of
-          Byzantine, Armenian, Egyptian, and Ottoman heritage. And a town
-          well-versed in trading with the world, too.
+          Whisk and swirl, every present a pearl. Join us on a journey to Gift
+          Haven, where joy and surprises unfurl
         </p>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-4 img-container p-1">
           <img
             class="img-cover"
-            src="./image/seasonal1.png"
-            alt="ItemPicture"
+            src="./image/product1_transparent.png"
+            alt="Seasonal Perfume"
+            onmouseover="changeImage(this)"
+            onmouseout="restoreImage(this)"
+            data-original-src="./image/product1_transparent.png"
+            data-hover-src="./image/seasonal_giftbox.png"
           />
         </div>
-        <div class="col-md-4 img-container p-1">
-          <img
-            class="img-cover"
-            src="./image/seasonal2.png"
-            alt="ItemPicture"
-          />
+        <div
+          class="col-md-4 img-container p-1"
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <p>
+            Elevate your senses to a holiday high with Cloud Cherry – where
+            festive dreams take flight.
+          </p>
+          <a href="./product1_Detail.html"
+            ><button type="button" class="btn btn-dark button">
+              More Info
+            </button></a
+          >
         </div>
       </div>
-      <div class="row">
-        <p class="text-center">
-          Ah, Halfeti - the jewel in Turkey's crown. With its wonderful mix of
-          Byzantine, Armenian, Egyptian, and Ottoman heritage. And a town
-          well-versed in trading with the world, too.
-        </p>
-      </div>
-      <div class="row">
+
+      <div class="row p-0 mt-5">
         <img
-          src="./image/seasonal_banner2.png"
-          alt="ItemPicture"
+          src="./image/seasonal_banner.png"
+          alt="Seasonal Banner"
           class="img-fluid-stretch"
         />
       </div>
+
+      <div class="row p-0 mt-5"><h3>Other related Products</h3></div>
+      <!-- 3 Item Section -->
+      <div class="row mb-5">
+        <div class="col-10 mx-auto">
+          <div class="container-fluid p-0">
+            <div class="row products-container">
+              <!-- Item 1 -->
+              <div class="col-5 col-md-3 p-0">
+                <div class="product">
+                  <img
+                    class="product_image"
+                    src="./image/product4_transparent.png"
+                    onmouseover="changeImage(this)"
+                    onmouseout="restoreImage(this)"
+                    data-original-src="./image/product4_transparent.png"
+                    data-hover-src="./image/giftbox.png"
+                    alt="Perfume Product"
+                  />
+                  <span class="product_name">WHITE MUSK & ROSE</span>
+                  <p class="product_description d-none d-sm-block">
+                    Nefertum's Signature Elixir. Timeless Elegance and
+                    Captivating Mystery
+                  </p>
+                  <span class="product_volume">100ML</span>
+                  <a href="./product4_Detail.html"
+                    ><button type="button" class="btn btn-dark button mt-3">
+                      View More
+                    </button></a
+                  >
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="col-5 col-md-3 p-0">
+                <div class="product">
+                  <img
+                    class="product_image"
+                    src="./image/product2_transparent.png"
+                    alt="Perfume Product"
+                    onmouseover="changeImage(this)"
+                    onmouseout="restoreImage(this)"
+                    data-original-src="./image/product2_transparent.png"
+                    data-hover-src="./image/giftbox.png"
+                    alt="Perfume Product"
+                  />
+                  <span class="product_name">PEAR & TONKA</span>
+                  <p class="product_description d-none d-sm-block">
+                    Premium and intense ladies Extrait De Parfum. Loud yet
+                    elegant.
+                  </p>
+                  <span class="product_volume">100ML</span>
+                  <a href="./product2_Detail.html"
+                    ><button type="button" class="btn btn-dark button mt-3">
+                      View More
+                    </button></a
+                  >
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="col-5 col-md-3 p-0 d-none d-sm-block">
+                <div class="product">
+                  <img
+                    class="product_image"
+                    src="./image/product3_transparent.png"
+                    alt="Perfume Product"
+                    onmouseover="changeImage(this)"
+                    onmouseout="restoreImage(this)"
+                    data-original-src="./image/product3_transparent.png"
+                    data-hover-src="./image/giftbox.png"
+                    alt="Perfume Product"
+                  />
+                  <span class="product_name">FRESH COTTON</span>
+                  <p class="product_description d-none d-sm-block">
+                    Clean and refreshing scent. It is one of the more trendy
+                    scents at the moment.
+                  </p>
+                  <span class="product_volume">100ML</span>
+                  <a href="./product3_Detail.html"
+                    ><button type="button" class="btn btn-dark button mt-3">
+                      View More
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div id="footer">
       <div class="outerBox">
         <hr />
         <div class="content">
           <div class="compDetails">
-            <span class="compName">AUREUM</span>
-            <span class="compAdd"
-              >High Perfumery from the land of Mexico, founded in 1989</span
-            >
+            <span class="compName">Nefertum Fragrances</span>
+            <span class="compAdd">
+              We craft enduring fragrances rich in base notes for lasting
+              allure.
+            </span>
           </div>
           <div>
             <span>ABOUT US</span>
-            <a href="">Our Story</a>
-            <a href="">Our Philosophy</a>
+            <a href="./story.html">Our Story</a>
+            <a href="./philosophy.html">Our Philosophy</a>
           </div>
           <div>
             <span>CLIENT SERVICES</span>
-            <a href="">Contact</a>
-            <a href="">Delivery and Returns</a>
-            <a href="">Olfactive Society</a>
-            <a href="">FAQs</a>
-            <a href="">Find a Boutique</a>
+            <a href="./ContactUs.html">Contact</a>
+            <a href="./FAQ.html">Delivery and Returns</a>
+            <a href="./Perks.html">Olfactive Society</a>
+            <a href="./FAQ.html">FAQs</a>
+            <a href="./findaboutique.html">Find a Boutique</a>
           </div>
           <div>
             <span>LEGAL</span>
-            <a href="">Terms and Conditions</a>
-            <a href="">Privacy Policy</a>
+            <a href="./TnC.html">Terms and Conditions</a>
+            <a href="./privacyPolicy.html">Privacy Policy</a>
           </div>
           <div>
             <span>FOLLOW US</span>
-            <a href="">Intagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
+            <a href="https://www.instagram.com/nefertumsg/">Intagram</a>
+            <a href="https://www.tiktok.com/@nefertumsg">Tiktok</a>
+            <a href="https://www.facebook.com/nefertumofficialstore"
+              >Facebook</a
+            >
           </div>
         </div>
         <hr />
       </div>
       <div class="logo">
-        <div>© Aureum 2023. All rights reserved.</div>
+        <div>© Nefertum Fragrances 2023. All rights reserved.</div>
         <div>
-          <img src="./image/logo_black.png" />
+          <img
+            src="./image/Nefertum Fragrances Logo - black ver.png"
+            alt="Nefertum Fragrances Logo in black version"
+          />
         </div>
       </div>
     </div>

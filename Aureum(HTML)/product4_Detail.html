@@ -1,254 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Product Detail</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/product4_Detail.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-JHXFX1WK3L');
-    </script>
-  </head>
+<head>
+  <title>Product Detail</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/product4_Detail.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHXFX1WK3L"></script>
   <script>
-    function triggerInput() {
-      const input = document.getElementById("textInput");
-      const enteredValue = input.value;
-      const bottleText = document.getElementById("bottleText");
-      bottleText.innerHTML = enteredValue.toUpperCase();
-    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    function openDescriptionTab() {
-      document.getElementById("descriptionTab").style.display = "block";
-      document.getElementById("notesTab").style.display = "none";
-      document.getElementById("compositionTab").style.display = "none";
-    }
-    function openNotesTab() {
-      document.getElementById("notesTab").style.display = "block";
-      document.getElementById("descriptionTab").style.display = "none";
-      document.getElementById("compositionTab").style.display = "none";
-    }
-    function openCompositionTab() {
-      document.getElementById("compositionTab").style.display = "block";
-      document.getElementById("notesTab").style.display = "none";
-      document.getElementById("descriptionTab").style.display = "none";
-    }
+    gtag('config', 'G-JHXFX1WK3L');
   </script>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./image/logo_black.png" class="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+</head>
+<script>
+  function triggerInput() {
+    const input = document.getElementById("textInput");
+    const enteredValue = input.value;
+    const bottleText = document.getElementById("bottleText");
+    bottleText.innerHTML = enteredValue.toUpperCase();
+  }
 
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fragrances</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gifting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Stores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our World</a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="./Login.html">Login</a>
-            </li>
-          </ul>
-        </div>
+  function openDescriptionTab() {
+    document.getElementById("descriptionTab").style.display = "block";
+    document.getElementById("notesTab").style.display = "none";
+    document.getElementById("compositionTab").style.display = "none";
+  }
+  function openNotesTab() {
+    document.getElementById("notesTab").style.display = "block";
+    document.getElementById("descriptionTab").style.display = "none";
+    document.getElementById("compositionTab").style.display = "none";
+  }
+  function openCompositionTab() {
+    document.getElementById("compositionTab").style.display = "block";
+    document.getElementById("notesTab").style.display = "none";
+    document.getElementById("descriptionTab").style.display = "none";
+  }
+</script>
 
-        <a href="./login.html" class="nav-item d-none d-lg-block"
-          ><img src="./image/profile.svg" class="profile-logo"
-        /></a>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./image/Nefertum Fragrances Logo - black ver.png"
+          class="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./product.html">Fragrances</a>
+          </li>
+          <a class="nav-link" href="./Seasonal.html">Seasonal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Custom.html">Engraving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./findaboutique.html">Stores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./story.html">Our World</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="./Login.html">Login</a>
+          </li>
+        </ul>
       </div>
-    </nav>
 
-    <div id="customisationSection" class="position-relative p-0">
-      <div class="row d-flex justify-content-center gap-2">
-        <div class="col d-grid gap-3 leftCol">
-          <div id="productImage">
-            <img src="image/product3_transparent.png" alt="Product Image" />
-          </div>
+      <a href="./login.html" class="nav-item d-none d-lg-block"><img src="./image/profile.svg"
+          class="profile-logo" /></a>
+    </div>
+  </nav>
+
+  <div id="customisationSection" class="position-relative p-0">
+    <div class="row d-flex justify-content-center gap-2">
+      <div class="col d-grid gap-3 leftCol">
+        <div id="productImage">
+          <img src="image/product4_transparent.png" alt="Product Image" />
         </div>
-        <div class="col d-grid gap-0 rightCol">
-          <div class="row justify-content-start productName">
-            WHITE MUSK & ROSE
-          </div>
-          <div class="row justify-content-start desc">Sexy & woody</div>
-          <div class="row justify-content-start desc">$49.99</div>
-          <div class="row justify-content-start selectLabel">Select a size</div>
-          <div class="row justify-content-start">
-            <form>
-              <div class="row">
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-1 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-1 radioSelection"
-                    >
-                      3.4 oz, 100ml
-                    </label>
-                  </div>
+      </div>
+      <div class="col d-grid gap-0 rightCol">
+        <div class="row justify-content-start productName">
+          WHITE MUSK & ROSE
+        </div>
+        <div class="row justify-content-start desc">Sexy & woody</div>
+        <div class="row justify-content-start desc">$49.99</div>
+        <div class="row justify-content-start selectLabel">Select a size</div>
+        <div class="row justify-content-start">
+          <form>
+            <div class="row">
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-1 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-1 radioSelection">
+                    3.4 oz, 100ml
+                  </label>
                 </div>
-                <!-- ))} -->
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-2 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-2 radioSelection"
-                    >
-                      1.05z, 30ml
-                    </label>
-                  </div>
-                </div>
-                <!-- ))} -->
-                <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
-                <div class="col">
-                  <div key="inline-radio" class="mb-3 selectButtons">
-                    <input
-                      type="radio"
-                      id="inline-radio-3 radioSelection"
-                      name="bottleSize"
-                      class="form-check-input"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="inline-radio-3 radioSelection"
-                    >
-                      0.3oz, 10ml
-                    </label>
-                  </div>
-                </div>
-                <!-- ))} -->
               </div>
-            </form>
-          </div>
-          <div class="row justify-content-end">
-            <button
-              class="btn btn-link addCustomButton"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#customisePopup"
-              style="width: 160px; height: 30px"
-            >
-              Add Customization
-            </button>
-          </div>
-          <div class="row justify-content-start">
-            <button
-              class="btn btn-dark button"
-              type="button"
-              style="width: 160px; height: 30px"
-            >
-              ADD TO BAG
-            </button>
-          </div>
+              <!-- ))} -->
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-2 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-2 radioSelection">
+                    1.05z, 30ml
+                  </label>
+                </div>
+              </div>
+              <!-- ))} -->
+              <!-- {['3.4 oz, 100ml', '1.05z, 30ml', '0.3oz, 10ml'].map((size) => ( -->
+              <div class="col">
+                <div key="inline-radio" class="mb-3 selectButtons">
+                  <input type="radio" id="inline-radio-3 radioSelection" name="bottleSize" class="form-check-input" />
+                  <label class="form-check-label" for="inline-radio-3 radioSelection">
+                    0.3oz, 10ml
+                  </label>
+                </div>
+              </div>
+              <!-- ))} -->
+            </div>
+          </form>
+        </div>
+        <div class="row justify-content-end">
+          <button class="btn btn-link addCustomButton" type="button" data-bs-toggle="modal"
+            data-bs-target="#customisePopup" style="width: 160px; height: 30px">
+            Add Customization
+          </button>
+        </div>
+        <div class="row justify-content-start">
+          <button class="btn btn-dark button" type="button" style="width: 160px; height: 30px">
+            ADD TO BAG
+          </button>
         </div>
       </div>
+    </div>
 
-      <div
-        id="customisePopup"
-        class="modal"
-        tabindex="-1"
-        role="dialog"
-        style="display: none"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">
-                <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="row gap-2 popupContent">
-                <div class="col d-grid gap-3 position-relative p-0">
-                  <div id="popup_productImage">
-                    <div class="overlay-text">
-                      <p id="bottleText" class="text-black"></p>
-                    </div>
+    <div id="customisePopup" class="modal" tabindex="-1" role="dialog" style="display: none">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <span class="popupTitle">CUSTOMIZE YOUR BOTTLE</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gap-2 popupContent">
+              <div class="col d-grid gap-3 position-relative p-0">
+                <div id="popup_productImage">
+                  <div class="overlay-text">
+                    <p id="bottleText" class="text-black"></p>
                   </div>
                 </div>
-                <div class="col gap-4 popupRightCol">
-                  <div class="row justify-content-center">
-                    Your bespoke perfume awaits, a reflection of your style,
-                    grace, and the essence of your extraordinary self.
-                  </div>
-                  <div class="row justify-content-center">
-                    <hr />
-                  </div>
-                  <div class="row justify-content-center">
-                    <form>
-                      <input
-                        id="textInput"
-                        type="text"
-                        placeholder="Enter name or phrase"
-                        oninput="triggerInput();"
-                      />
-                    </form>
-                  </div>
-                  <div class="row justify-content-center">
-                    <button
-                      class="btn btn-dark button"
-                      type="button"
-                      style="width: 160px; height: 30px"
-                    >
-                      SAVE
-                    </button>
-                  </div>
+              </div>
+              <div class="col gap-4 popupRightCol">
+                <div class="row justify-content-center">
+                  Your bespoke perfume awaits, a reflection of your style,
+                  grace, and the essence of your extraordinary self.
+                </div>
+                <div class="row justify-content-center">
+                  <hr />
+                </div>
+                <div class="row justify-content-center">
+                  <form>
+                    <input id="textInput" type="text" placeholder="Enter name or phrase" oninput="triggerInput();" />
+                  </form>
+                </div>
+                <div class="row justify-content-center">
+                  <button class="btn btn-dark button" type="button" style="width: 160px; height: 30px">
+                    SAVE
+                  </button>
                 </div>
               </div>
             </div>
@@ -256,233 +191,229 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="descTabsSection">
-      <ul class="nav nav-underline tabHeaders">
-        <li class="nav-item">
-          <a
-            href="#description"
-            class="nav-link"
-            aria-current="page"
-            onclick="openDescriptionTab()"
-            >DESCRIPTION</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
-        </li>
-        <li class="nav-item">
-          <a href="#composition" class="nav-link" onclick="openCompositionTab()"
-            >COMPOSITION</a
-          >
-        </li>
-      </ul>
+  <div id="descTabsSection">
+    <ul class="nav nav-underline tabHeaders">
+      <li class="nav-item">
+        <a href="#description" class="nav-link" aria-current="page" onclick="openDescriptionTab()">DESCRIPTION</a>
+      </li>
+      <li class="nav-item">
+        <a href="#notes" class="nav-link" onclick="openNotesTab()">NOTES</a>
+      </li>
+      <li class="nav-item">
+        <a href="#composition" class="nav-link" onclick="openCompositionTab()">COMPOSITION</a>
+      </li>
+    </ul>
 
-      <div id="descriptionTab">
-        <div class="row gap-5 descContent">
-          <div class="col">
-            <div class="row">
-              <p>
-                WHITE MUSK & ROSE: Nefertum's Signature Elixir. Timeless
-                Elegance and Captivating Mystery
-              </p>
-            </div>
-            <div class="row">
-              <p>
-                Crafted as an ode to sophistication and allure, "White Musk &
-                Rose" stands as the crown jewel in Nefertum's collection, a
-                mesmerizing symphony that captures the essence of timeless
-                beauty.
-              </p>
-              <p>
-                At its inception, the scent dances upon the skin with an
-                enthralling overture. The luminous essence of Bergamot and the
-                tangy embrace of Black Currant compose the invigorating top
-                notes, akin to a sunlit garden in full bloom, inviting you into
-                a world of resplendent fragrance.
-              </p>
-              <p>
-                Transitioning to its heart, this perfume delves into a sensuous
-                embrace. The velvety petals of Rose and the rich depth of
-                Tobacco entwine with the delicate whispers of Orange Blossom,
-                creating a magnetic bouquet that evokes deep emotions and a
-                sense of grandeur.
-              </p>
-              <p>
-                At its foundation, the fragrance rests upon an ethereal
-                pedestal. The enigmatic allure of White Musk intertwines with
-                the ancient charm of Olibanum, creating a sublime and lasting
-                impression that weaves itself into the very fabric of your
-                essence.
-              </p>
-              <p>
-                "White Musk & Rose" isn't merely a perfume; it's an embodiment
-                of sophistication and enigma. It speaks a language of sensuality
-                and empowerment, offering an olfactory experience that is both
-                refined and seductive.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="productImage">
-              <img src="image/product3_desc_img.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notesTab" style="display: none">
-        <b>TOP:</b> Bergamot, Blackcurrant <br />
-        <b>MIDDLE:</b> Tobacco, Rose, Orange Blossom <br />
-        <b>BASE:</b> White Musk, Olibanum <br />
-      </div>
-      <div id="compositionTab" style="display: none">
-        <b>INGREDIENTS: </b>Alcohol Denat. Citronella, Geraniol, Citral,
-        Linalool, fragrance, Hydroxycitronellal, BHT
-      </div>
-    </div>
-    <!------------------------------ ELEMENTS SECTION ------------------------------>
-    <div id="elements" class="row d-flex justify-content-center">
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_bergamot.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">BERGAMOT</p>
-        </div>
-        <div class="row">
-          <p>
-            Like a burst of sunshine on a citrus orchard, bergamot brings a
-            zesty, effervescent freshness to fragrances. Its vibrant and
-            uplifting aroma captures the essence of Mediterranean summers,
-            infusing scents with a sparkling and invigorating character.
-            Bergamot adds a tantalizing citrusy touch that awakens the senses,
-            painting an olfactory picture of sunny landscapes and crisp, breezy
-            mornings.
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_rose.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">ROSE</p>
-        </div>
-        <div class="row">
-          <p>
-            Embodied in the petals of romance, rose brings an exquisite and
-            timeless elegance to scents. Its floral symphony evokes emotions of
-            love and sophistication, enveloping fragrances in a delicate,
-            intoxicating sweetness. Rose, with its multifaceted aroma, weaves a
-            tale of passion and grace, reminiscent of blooming gardens and
-            eternal romance.
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="row">
-          <div class="elementImage">
-            <img src="image/product_element_pinkpepper.png" />
-          </div>
-        </div>
-        <div class="row">
-          <p class="elementName">PINK PEPPER</p>
-        </div>
-        <div class="row">
-          <p>
-            Adding a tantalizingly spicy twist, pink pepper infuses fragrances
-            with a peppery, rosy warmth. Its vibrant and slightly fruity aroma
-            offers a captivating contrast, lending a touch of enigmatic allure
-            to scents. Pink pepper brings a subtle fiery essence, evoking images
-            of exotic spice markets and adding a dash of excitement to the
-            fragrance profile.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div id="extra" class="col">
-      <div class="row row1">
+    <div id="descriptionTab">
+      <div class="row gap-5 descContent">
         <div class="col">
-          <div class="extraImage">
-            <img src="image/product1_notes_img1.png" />
+          <div class="row">
+            <p>
+              WHITE MUSK & ROSE: Nefertum's Signature Elixir. Timeless
+              Elegance and Captivating Mystery
+            </p>
           </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p>
-            Embracing the skin, this signature elixir reveals a duality that is
-            both timeless and modern. It exudes an irresistible smoky sweetness
-            that dances between the realms of elegance and allurement, leaving
-            an indelible mark on those it encounters.
-          </p>
-        </div>
-      </div>
-      <div class="row row2">
-        <div class="col d-flex justify-content-center">
-          <p>
-            Captivating, sophisticated, and daringly elegant, "White Musk &
-            Rose" isn't just a fragrance; it's an experience crafted to
-            celebrate the essence of allure and sophistication, inviting you to
-            indulge in the seductive mysteries it unfurls.
-          </p>
+          <div class="row">
+            <p>
+              Crafted as an ode to sophistication and allure, "White Musk &
+              Rose" stands as the crown jewel in Nefertum's collection, a
+              mesmerizing symphony that captures the essence of timeless
+              beauty.
+            </p>
+            <p>
+              At its inception, the scent dances upon the skin with an
+              enthralling overture. The luminous essence of Bergamot and the
+              tangy embrace of Black Currant compose the invigorating top
+              notes, akin to a sunlit garden in full bloom, inviting you into
+              a world of resplendent fragrance.
+            </p>
+            <p>
+              Transitioning to its heart, this perfume delves into a sensuous
+              embrace. The velvety petals of Rose and the rich depth of
+              Tobacco entwine with the delicate whispers of Orange Blossom,
+              creating a magnetic bouquet that evokes deep emotions and a
+              sense of grandeur.
+            </p>
+            <p>
+              At its foundation, the fragrance rests upon an ethereal
+              pedestal. The enigmatic allure of White Musk intertwines with
+              the ancient charm of Olibanum, creating a sublime and lasting
+              impression that weaves itself into the very fabric of your
+              essence.
+            </p>
+            <p>
+              "White Musk & Rose" isn't merely a perfume; it's an embodiment
+              of sophistication and enigma. It speaks a language of sensuality
+              and empowerment, offering an olfactory experience that is both
+              refined and seductive.
+            </p>
+          </div>
         </div>
         <div class="col">
-          <div class="extraImage">
-            <img src="image/product1_notes_img2.png" />
+          <div class="productImage">
+            <img src="image/product4_desc_img.png" />
           </div>
         </div>
       </div>
     </div>
 
-    <div id="footer">
-      <div class="outerBox">
-        <hr />
-        <div class="content">
-          <div class="compDetails">
-            <span class="compName">AUREUM</span>
-            <span class="compAdd"
-              >High Perfumery from the land of Mexico, founded in 1989</span
-            >
-          </div>
-          <div>
-            <span>ABOUT US</span>
-            <a href="">Our Story</a>
-            <a href="">Our Philosophy</a>
-          </div>
-          <div>
-            <span>CLIENT SERVICES</span>
-            <a href="">Contact</a>
-            <a href="">Delivery and Returns</a>
-            <a href="">Olfactive Society</a>
-            <a href="">FAQs</a>
-            <a href="">Find a Boutique</a>
-          </div>
-          <div>
-            <span>LEGAL</span>
-            <a href="">Terms and Conditions</a>
-            <a href="">Privacy Policy</a>
-          </div>
-          <div>
-            <span>FOLLOW US</span>
-            <a href="">Intagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-          </div>
+    <div id="notesTab" style="display: none">
+      <b>TOP:</b> Bergamot, Blackcurrant <br />
+      <b>MIDDLE:</b> Tobacco, Rose, Orange Blossom <br />
+      <b>BASE:</b> White Musk, Olibanum <br />
+    </div>
+    <div id="compositionTab" style="display: none">
+      <b>INGREDIENTS: </b>Alcohol Denat. Citronella, Geraniol, Citral,
+      Linalool, fragrance, Hydroxycitronellal, BHT
+    </div>
+  </div>
+  <!------------------------------ ELEMENTS SECTION ------------------------------>
+  <div id="elements" class="row d-flex justify-content-center">
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_bergamot.png" />
         </div>
-        <hr />
       </div>
-      <div class="logo">
-        <div>© Aureum 2023. All rights reserved.</div>
+      <div class="row">
+        <p class="elementName">BERGAMOT</p>
+      </div>
+      <div class="row">
+        <p>
+          Like a burst of sunshine on a citrus orchard, bergamot brings a
+          zesty, effervescent freshness to fragrances. Its vibrant and
+          uplifting aroma captures the essence of Mediterranean summers,
+          infusing scents with a sparkling and invigorating character.
+          Bergamot adds a tantalizing citrusy touch that awakens the senses,
+          painting an olfactory picture of sunny landscapes and crisp, breezy
+          mornings.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_rose.png" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="elementName">ROSE</p>
+      </div>
+      <div class="row">
+        <p>
+          Embodied in the petals of romance, rose brings an exquisite and
+          timeless elegance to scents. Its floral symphony evokes emotions of
+          love and sophistication, enveloping fragrances in a delicate,
+          intoxicating sweetness. Rose, with its multifaceted aroma, weaves a
+          tale of passion and grace, reminiscent of blooming gardens and
+          eternal romance.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="elementImage">
+          <img src="image/product_element_pinkpepper.png" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="elementName">PINK PEPPER</p>
+      </div>
+      <div class="row">
+        <p>
+          Adding a tantalizingly spicy twist, pink pepper infuses fragrances
+          with a peppery, rosy warmth. Its vibrant and slightly fruity aroma
+          offers a captivating contrast, lending a touch of enigmatic allure
+          to scents. Pink pepper brings a subtle fiery essence, evoking images
+          of exotic spice markets and adding a dash of excitement to the
+          fragrance profile.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="extra" class="col">
+    <div class="row row1">
+      <div class="col">
+        <div class="extraImage">
+          <img src="image/product4_extra_1.png" />
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <p>
+          Embracing the skin, this signature elixir reveals a duality that is
+          both timeless and modern. It exudes an irresistible smoky sweetness
+          that dances between the realms of elegance and allurement, leaving
+          an indelible mark on those it encounters.
+        </p>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col d-flex justify-content-center">
+        <p>
+          Captivating, sophisticated, and daringly elegant, "White Musk &
+          Rose" isn't just a fragrance; it's an experience crafted to
+          celebrate the essence of allure and sophistication, inviting you to
+          indulge in the seductive mysteries it unfurls.
+        </p>
+      </div>
+      <div class="col">
+        <div class="extraImage">
+          <img src="image/product4_extra_2.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='footer'>
+    <div class='outerBox'>
+      <hr />
+      <div class='content'>
+
+        <div class='compDetails'>
+          <span class='compName'>Nefertum Fragrances</span>
+          <span class='compAdd'>
+            We craft enduring fragrances rich in base notes for lasting allure.
+          </span>
+        </div>
         <div>
-          <img src="./image/logo_black.png" />
+          <span>ABOUT US</span>
+          <a href="./story.html">Our Story</a>
+          <a href="./philosophy.html">Our Philosophy</a>
+        </div>
+        <div>
+          <span>CLIENT SERVICES</span>
+          <a href="./ContactUs.html">Contact</a>
+          <a href="./FAQ.html">Delivery and Returns</a>
+          <a href="./Perks.html">Olfactive Society</a>
+          <a href="./FAQ.html">FAQs</a>
+          <a href="./findaboutique.html">Find a Boutique</a>
+        </div>
+        <div>
+          <span>LEGAL</span>
+          <a href="./TnC.html">Terms and Conditions</a>
+          <a href="./privacyPolicy.html">Privacy Policy</a>
+        </div>
+        <div>
+          <span>FOLLOW US</span>
+          <a href="https://www.instagram.com/nefertumsg/">Intagram</a>
+          <a href="https://www.tiktok.com/@nefertumsg">Tiktok</a>
+          <a href="https://www.facebook.com/nefertumofficialstore">Facebook</a>
         </div>
       </div>
+      <hr />
     </div>
-  </body>
+    <div class='logo'>
+      <div>
+        © Nefertum Fragrances 2023. All rights reserved.
+      </div>
+      <div>
+        <img src="./image/Nefertum Fragrances Logo - black ver.png" alt="Nefertum Fragrances Logo in black version" />
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

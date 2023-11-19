@@ -47,19 +47,20 @@
 }
 #valueBanners .text3{
     font-size: 14px;
+    width: 40%;
 }
 #valueBanners .bannerImg{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 350px;
+    height: 450px;
 }
 #valueBanners .whiteBox{
     width: 100%;
-    height: 350px;
+    height: 450px;
 }
 #valueBanners .imageBanner{
     width: 100%;
-    height: 350px;
+    height: 450px;
     overflow: hidden;
     background-image: url(../../assets/products_main_banner.png);
     background-attachment: fixed;
