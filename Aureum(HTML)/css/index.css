@@ -33,12 +33,15 @@
 
 .overlay-text p,
 .overlay-text button {
-  margin: 10px; /* Adjust the margin as needed */
+  margin: 10px;
+  /* Adjust the margin as needed */
 }
 
 #banner .vid-fluid-stretch {
-  width: 100%; /* Image takes up the full width of the container */
-  height: 35rem; /* Image takes up the full height of the container */
+  width: 100%;
+  /* Image takes up the full width of the container */
+  height: 35rem;
+  /* Image takes up the full height of the container */
   object-fit: cover;
 }
 
@@ -112,9 +115,11 @@
   font-size: 0.8em;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-line-clamp: 2;
+  /* Number of lines to show */
   -webkit-box-orient: vertical;
 }
+
 .products-container .product_volume {
   font-size: 1em;
   text-transform: uppercase;
@@ -142,17 +147,21 @@
 
 .overlay-text p,
 .overlay-text button {
-  margin: 10px; /* Adjust the margin as needed */
+  margin: 10px;
+  /* Adjust the margin as needed */
 }
 
 .img-fluid-stretch {
-  width: 100%; /* Image takes up the full width of the container */
-  height: 400px; /* Image takes up the full height of the container */
+  width: 100%;
+  /* Image takes up the full width of the container */
+  height: 400px;
+  /* Image takes up the full height of the container */
   object-fit: cover;
 }
 
 a {
-  color: inherit; /* Set the color to inherit from its parent */
+  color: inherit;
+  /* Set the color to inherit from its parent */
 }
 
 .grey {
@@ -161,4 +170,10 @@ a {
 
 .transparency-overlay:hover {
   filter: brightness(0.5);
+}
+
+.shopcollectionbutton input {
+  width: 350px;
+  font-family: Coromorant Garamond;
+  text-transform: uppercase;
 }

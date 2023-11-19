@@ -50,10 +50,28 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   color: white;
+  font-family: Coromorant Garamond;
+  text-transform: uppercase;
 }
 
 button:hover {
-  border-color: #646cff;
+  background-color: #cecece;
+  color: black;
+  border: 1px solid #cecece;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-dark:hover {
+  background-color: #cecece;
+  color: black;
+  border: 1px solid #cecece;
+  transition: 0.3s;
 }
 
 button:focus,
@@ -133,9 +151,11 @@ hr {
 #footer div {
   margin-bottom: 10px;
 }
-.logo{
+
+.logo {
   text-align: center;
 }
+
 #footer .logo img {
   height: 40px;
   margin: 10px;
