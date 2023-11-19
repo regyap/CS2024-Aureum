@@ -16,6 +16,10 @@
 a {
   color: #fbcc97;
 }
+a:hover{
+  color: #eba14e;
+}
+
 form div {
   margin: 1.5rem 0;
 }

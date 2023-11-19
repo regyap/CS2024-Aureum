@@ -3,7 +3,6 @@
 }
 #mainBanner .text1{
     font-size: 18px;
-    font-family: "Inter", sans-serif;
     letter-spacing: 5px;
 }
 #mainBanner .text2{
@@ -38,7 +37,6 @@
 
 #valueBanners .text1{
     font-size: 14px;
-    font-family: "Inter", sans-serif;
     letter-spacing: 5px;
 }
 #valueBanners .text2{
