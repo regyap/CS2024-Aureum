@@ -6,7 +6,7 @@
 }
 .header{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 .subheader{
@@ -23,10 +23,14 @@
     margin-right: auto;
 }
 .images{
-    height: 300px;
+    height: 200px;
     margin-bottom: 20px;
 }
 .banner{
     margin-top: 56px;
     margin-bottom: 76px;
+    width: 100%;
+}
+.joinNow{
+    padding-top: 67px;
 }
